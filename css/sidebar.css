@@ -1,0 +1,46 @@
+.sb-content {
+  width: 75%;
+  height: 100%;
+  position: fixed;
+  left: 25%;
+}
+
+.sb-sidebar {
+  left: 0px;
+  width: 25%;
+  background: #000;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: -1;
+}
+
+#menu-toggle {
+  display: none;
+  position: absolute;
+  left:0px
+}
+
+@media (max-width:767px) {
+
+  .sb-content {
+    width:100%;
+    left:0;
+    transition: all 0.4s ease 0s;
+    background:#FFFFFF
+  }
+
+  .sb-sidebar {
+    width:66%;
+  }
+
+  #wrapper.active .sb-content {
+    left: 66%;
+    transition: all 0.4s ease 0s;
+  }
+
+  #menu-toggle {
+    display: inline-block;
+    background: #000000;
+  }
+}
