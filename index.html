@@ -11,36 +11,46 @@
     <!--
     <script src="js/bootstrap.min.js"></script>
     -->
-    <link href="css/my.css" rel="stylesheet">
+    <link href="css/page.css" rel="stylesheet">
+    <script src="js/page.js"></script>
     <link href="css/sidebar.css" rel="stylesheet">
+    <script src="js/sidebar.js"></script>
+    <link href="css/pamunmobile.css" rel="stylesheet">
+    <script>showingPageId = '#page-home';</script>
   </head>
 
   <body>
     <div id="wrapper">
       <div id="sidebar" class="sb-sidebar">
         <ul class="list-group">
-          <a href="#" class="list-group-item">1</a>
-          <a href="#" class="list-group-item">2</a>
-          <a href="#" class="list-group-item">3</a>
+          <a onclick="showPage('#page-home')" class="list-group-item">PAMUN</a>
+          <a onclick="showPage('#page-about')" class="list-group-item">About</a>
         </ul>
       </div>
-      <div id="page-home" class="page sb-content">
-        <div class="page-header">
-          <a id="menu-toggle" href="#" class="btn btn-default">
-            <i class="icon-reorder"></i>
-          </a>
-          <h1>PAMUN 2014</h1>
+      <div class="sb-content">
+        <div id="page-home" class="page showing-page">
+          <div class="page-header">
+            <a class="btn btn-default menu-toggle">
+              <i class="icon-reorder"></i>
+            </a>
+            <h1>PAMUN 2014</h1>
+          </div>
+          <div class="page-content">
+            Here is the content<br>Here is the content<br>Here is the content<br>Here is the content<br>Here is the content<br>Here is the content<br>Here is the content<br>
+          </div>
         </div>
-        <div class="page-content">
-          Here is the content<br>Here is the content<br>Here is the content<br>Here is the content<br>Here is the content<br>Here is the content<br>Here is the content<br>
+        <div id="page-about" class="page">
+          <div class="page-header">
+            <a class="btn btn-default menu-toggle">
+              <i class="icon-reorder"></i>
+            </a>
+            <h1>About</h1>
+          </div>
+          <div class="page-content">
+            Here is the aboutcontent<br>Here is the aboutcontent<br>Here is the aboutcontent<br>Here is the aboutcontent<br>Here is the aboutcontent<br>Here is the aboutcontent<br>Here is the aboutcontent<br>
+          </div>
         </div>
       </div>
     </div>
-    <script> 
-      $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("active");
-      });
-    </script>
   </body>
 </html>
