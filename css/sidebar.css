@@ -16,6 +16,9 @@
 }
 
 .menu-toggle {
+  margin: 5px;
+  height: 30px;
+  width: 30px;
   display: none;
   position: absolute;
   left:0px
@@ -34,13 +37,13 @@
     width:66%;
   }
 
-  #wrapper.active .sb-content {
+  #wrapper.sb-active .sb-content {
     left: 66%;
     transition: all 0.4s ease 0s;
   }
 
   .menu-toggle {
     display: inline-block;
-    background: #000000;
+    background:url(../icons/menu.png) center no-repeat;
   }
 }

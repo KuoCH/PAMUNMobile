@@ -2,6 +2,13 @@
 //ex: showingPageId = '#page-main';
 var showingPageId;
 
+$(window).load( function () {
+  var mainPage = $('.page').first();
+  mainPage.addClass('showing-page');
+  showingPageId = '#' + mainPage.attr('id');
+
+});
+
 function showPage(targetPageId){
   var targetNode = $(targetPageId);
   if (!targetNode.length) {
@@ -17,5 +24,5 @@ function showPage(targetPageId){
   targetNode.addClass('showing-page');
   showingPageId = targetPageId;
   //For sidebar on small screen
-  $('#wrapper').removeClass('active');
+  $('#wrapper').removeClass('sb-active');
 }
