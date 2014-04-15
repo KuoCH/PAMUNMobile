@@ -1,6 +1,10 @@
 $(window).load( function () {
-  $('.sb-content').on('tap', function() {
-    if ($('#wrapper').hasClass('sb-active')) $('#wrapper').removeClass('sb-active');
+  $('.sb-content').on('tap', function(e) {
+    if ($('#wrapper').hasClass('sb-active')) {
+      e.preventDefault();
+      $('#wrapper').removeClass('sb-active');
+      return false;
+    }
   });
 
   $('.menu-toggle').click(function(e) {
