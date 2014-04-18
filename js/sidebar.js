@@ -7,6 +7,9 @@ $(window).load( function () {
     }
   });
 
+  $.event.special.swipe.scrollSupressionThreshold = 150;
+  $.event.special.swipe.horizontalDistanceThreshold = 150;
+  $.event.special.swipe.verticalDistanceThreshold = 15;
   $('#wrapper').on('swipeleft', function(e) {
     if ($('#wrapper').hasClass('sb-active')) {
       e.preventDefault();

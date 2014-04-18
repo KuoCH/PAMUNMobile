@@ -6,6 +6,10 @@ $(window).load( function () {
   var mainPage = $('.page').first();
   mainPage.addClass('showing-page');
   showingPageId = '#' + mainPage.attr('id');
+  $('.page .header').each(function(i,element) {
+    element.innerHTML="<a class=\"btn btn-default menu-toggle\"><i class=\"icon-reorder\"></i></a>"+element.innerHTML;
+  });
+
 
 });
 
@@ -24,5 +28,7 @@ function showPage(targetPageId){
   targetNode.addClass('showing-page');
   showingPageId = targetPageId;
   //For sidebar on small screen
-  $('#wrapper').removeClass('sb-active');
+  if ($('#wrapper').hasClass('sb-active')) {
+    $('#wrapper').removeClass('sb-active');
+  }
 }
