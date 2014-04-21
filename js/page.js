@@ -10,6 +10,9 @@ $(window).load( function () {
     element.innerHTML="<a class=\"btn btn-default menu-toggle\"><i class=\"icon-reorder\"></i></a>"+element.innerHTML;
   });
 
+  $('.page .content').each(function(i,element) {
+    new ScrollFix(element);
+  });
 
 });
 

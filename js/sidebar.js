@@ -24,4 +24,6 @@ $(window).load( function () {
     return false;
   });
 
+  new ScrollFix($('.sb-sidebar')[0]);
+
 });
