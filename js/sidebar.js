@@ -25,5 +25,4 @@ $(window).load( function () {
   });
 
   new ScrollFix($('.sb-sidebar')[0]);
-
 });
