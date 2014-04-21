@@ -24,4 +24,8 @@ $(window).load( function () {
     return false;
   });
 
+  //Prevent the bounce on whole document, which disable scroll of child node.
+  document.ontouchmove = function(e) {e.preventDefault();return true;};
+  $('.sb-sidebar')[0].ontouchmove = function(e) {e.stopPropagation();};
+  $('.sb-content')[0].ontouchmove = function(e) {e.stopPropagation();};
 });
