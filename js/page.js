@@ -32,6 +32,6 @@ function showPage(targetPageId){
   showingPageId = targetPageId;
   //For sidebar on small screen
   if ($('#wrapper').hasClass('sb-active')) {
-    $('#wrapper').removeClass('sb-active');
+    $('#wrapper').addClass('sb-hide').removeClass('sb-active');
   }
 }

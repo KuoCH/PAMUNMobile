@@ -3,24 +3,34 @@
   width:100%;
   position: fixed;
   left:0;
-  transition: all 0.4s ease 0s;
   background:#FFFFFF
 }
 
 .sb-sidebar {
-  left: 0px;
   width: 200px;
   background: #000;
   position: fixed;
   height: 100%;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  z-index: -1;
+  z-index: 1;
+}
+
+#wrapper.sb-hide .sb-sidebar {
+  left: -200px;
+  transition: all 0.4s ease 0s;
+}
+#wrapper.sb-active .sb-sidebar {
+  left: 0px;
+  transition: all 0.4s ease 0s;
+}
+
+#wrapper.sb-drag .sb-sidebar {
+  left: 0px;
 }
 
 #wrapper.sb-active .sb-content {
-  left: 200px;
-  transition: all 0.4s ease 0s;
+  background:#DADBDD
 }
 
 .menu-toggle {
