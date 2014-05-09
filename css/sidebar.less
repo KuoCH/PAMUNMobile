@@ -1,0 +1,112 @@
+
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.sb-content {
+  height: 100%;
+  width:100%;
+  position: fixed;
+  left:0;
+  background:#FFFFFF;
+  z-index: 0;
+}
+
+.sb-sidebar {
+  left: unit(`scale(-163)`,px);
+  width: unit(`scale(163)`, px);
+  background: #888888;
+  position: fixed;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  z-index: 1;
+  transition: all 0.4s ease 0s;
+  color:white;
+}
+
+#wrapper.sb-active .sb-sidebar {
+  left: unit(`scale(0)`,px);
+  transition: all 0.4s ease 0s;
+}
+
+#wrapper.sb-active .sb-content {
+  background: #DADBDD;
+  transition: all 0.4s ease 0s;
+}
+.menu-toggle {
+  margin: unit(`scale(5)`,px);
+  height: unit(`scale(20)`,px);
+  width: unit(`scale(20)`,px);
+  display: inline-block;
+  background:url(../icons/menu.png) center no-repeat;
+  position: absolute;
+  left:0px
+}
+
+.sb-sidebar .sidebar-header {
+  position: relative;
+}
+
+.sb-sidebar .homepage {
+  width: unit(`scale(150)`,px);
+  height: unit(`scale(40)`,px);
+  background: #454756;
+}
+
+.sb-sidebar .homepage>* {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.sb-sidebar .hide-sidebar {
+  width: unit(`scale(13)`,px);
+  height: unit(`scale(25)`,px);
+  background: #FF0000;
+  position: absolute;
+  left: unit(`scale(150)`,px);
+  bottom: unit(`scale(0)`,px);
+}
+
+.sb-sidebar .yellow-line {
+  width: unit(`scale(150)`,px);
+  height: unit(`scale(1)`,px);
+  background: #E6E75D;
+}
+
+.sb-sidebar .group-title {
+  background: #454756;
+  height: unit(`scale(33)`,px);
+  width: unit(`scale(150)`,px);
+  position: relative;
+}
+
+.sb-sidebar .group-title>img {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: unit(`scale(10)`,px);
+  left: unit(`scale(11)`,px);
+}
+
+.sb-sidebar .group-title>.title-string {
+  .vertical-center;
+  left: unit(`scale(40)`,px);
+}
+
+.sb-sidebar .list-item {
+}
+
+.sb-sidebar .list-item:hover {
+}
+
+.sb-sidebar .list-item-second-layer {
+}
+

@@ -11,24 +11,24 @@
 .page .header {
   width: 100%;
   position: relative;
-  top: 0px;
+  top: unit(`scale(0)`,px);
   margin: 0;
-  height: 40px;
-  line-height: 40px;
+  height: unit(`scale(35)`,px);
+  line-height: unit(`scale(35)`,px);
   text-align: center;
-  font-size: 36px;
+  font-size: unit(`scale(14)`,px);
 }
 
 .second-layer-page .header {
-  font-size: 24px;
+  font-size: unit(`scale(24)`,px);
 }
 
 .page .content {
   /*height: 100%;*/
   position: absolute;
-  margin: 10px;
-  top: 40px;
-  bottom: 0px;
+  margin: unit(`scale(10)`,px);
+  top: unit(`scale(40)`,px);
+  bottom: unit(`scale(0)`,px);
   display: block;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;

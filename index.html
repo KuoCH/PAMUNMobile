@@ -5,20 +5,46 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/page.css" rel="stylesheet">
-    <link href="css/sidebar.css" rel="stylesheet">
+    <link href="css/page.less" rel="stylesheet/less">
+    <link href="css/sidebar.less" rel="stylesheet/less">
     <link href="css/pamunmobile.css" rel="stylesheet">
+    <script src="js/util.js"></script>
     <script src="js/jquery-1.11.0.js"></script>
     <script src="js/jquery.mobile.touchevent.js"></script>
+    <!--
+    <script>
+      less = {
+         env: "development",
+             logLevel: 2,
+        functions: { scale : function(design) { 
+            console.log(design.value);
+            console.log($(window).width()*design.value/180);
+            return 180; 
+          }
+        }
+      };
+    </script>
+    -->
     <script src="js/page.js"></script>
     <script src="js/sidebar.js"></script>
     <script src="js/scrollfix.js"></script>
   </head>
 
   <body>
-    <div id="wrapper">
+    <div id="wrapper" class="sb-active">
 
       <div id="sidebar" class="sb-sidebar">
+        <div class="sidebar-header">
+          <div class="homepage">
+            <div class="logo"></div> <p class="homepage-string">PAMUN2014</p>
+          </div>
+          <div class="hide-sidebar"></div>
+        </div>
+        <div class="yellow-line"></div>
+        <div class="group" icon="icons/about/about.png" string="About Us">
+          <div class="list-item"></div>
+        </div>
+        <!--
         <ul class="list-group">
           <a onclick="showPage('#page-home')" class="list-item">PAMUN</a>
           <a onclick="showPage('#page-about')" class="list-item">About</a>
@@ -49,6 +75,7 @@
           <a onclick="showPage('#page-posters')" class="list-item list-item-second-layer">Posters</a>
           <a onclick="showPage('#page-video')" class="list-item list-item-second-layer">Video</a>
         </ul>
+        -->
       </div>
 
       <div class="sb-content">
@@ -354,4 +381,5 @@
 
     </div> <!-- end of wrapper -->
   </body>
+    <script src="js/less-1.7.0.min.js"></script>
 </html>

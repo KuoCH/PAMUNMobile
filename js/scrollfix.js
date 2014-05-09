@@ -9,7 +9,7 @@
 
 var ScrollFix = function(elem) {
 	// Variables to track inputs
-	var startY = startTopScroll = deltaY = undefined,
+	var startTopScroll = undefined,
 	
 	elem = elem || elem.querySelector(elem);
 	
@@ -19,7 +19,6 @@ var ScrollFix = function(elem) {
 
 	// Handle the start of interactions
 	elem.addEventListener('touchstart', function(event){
-		startY = event.touches[0].pageY;
 		startTopScroll = elem.scrollTop;
 		
 		if(startTopScroll <= 0)
