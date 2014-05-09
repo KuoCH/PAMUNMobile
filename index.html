@@ -14,20 +14,14 @@
     <!--
     <script>
       less = {
-         env: "development",
-             logLevel: 2,
-        functions: { scale : function(design) { 
-            console.log(design.value);
-            console.log($(window).width()*design.value/180);
-            return 180; 
-          }
-        }
+      env: "development",
+      logLevel: 2,
       };
     </script>
     -->
     <script src="js/page.js"></script>
     <script src="js/sidebar.js"></script>
-    <script src="js/scrollfix.js"></script>
+    <script src="js/scrollIwant.js"></script>
   </head>
 
   <body>
@@ -36,13 +30,30 @@
       <div id="sidebar" class="sb-sidebar">
         <div class="sidebar-header">
           <div class="homepage">
-            <div class="logo"></div> <p class="homepage-string">PAMUN2014</p>
+            <img> <p class="homepage-string">PAMUN2014</p>
           </div>
-          <div class="hide-sidebar"></div>
+          <img class="hide-sidebar" src="icons/hide_sidebar.png">
         </div>
         <div class="yellow-line"></div>
-        <div class="group" icon="icons/about/about.png" string="About Us">
-          <div class="list-item"></div>
+        <div class="groups-wrapper">
+          <div class="groups">
+            <div class="group" icon="icons/about/about.png" string="About Us">
+              <div class="group-item" icon="icons/about/what_is_pan_asia_mun.png" string="What is Pan Asia MUN" pageId="#page-what-is-pamun"></div>
+              <div class="group-item" icon="icons/about/what_is_pan_asia_mun.png" string="What is Pan Asia MUN" pageId="#page-what-is-pamun"></div>
+              <div class="group-item" icon="icons/about/what_is_pan_asia_mun.png" string="What is Pan Asia MUN" pageId="#page-what-is-pamun"></div>
+              <div class="group-item" icon="icons/about/what_is_pan_asia_mun.png" string="What is Pan Asia MUN" pageId="#page-what-is-pamun"></div>
+              <div class="group-item" icon="icons/about/what_is_pan_asia_mun.png" string="What is Pan Asia MUN" pageId="#page-what-is-pamun"></div>
+              <div class="group-item" icon="icons/about/what_is_pan_asia_mun.png" string="What is Pan Asia MUN" pageId="#page-what-is-pamun"></div>
+            </div>
+            <div class="group" icon="icons/about/about.png" string="About Us">
+              <div class="group-item" icon="icons/about/what_is_pan_asia_mun.png" string="What is Pan Asia MUN" pageId="#page-what-is-pamun"></div>
+              <div class="group-item" icon="icons/about/what_is_pan_asia_mun.png" string="What is Pan Asia MUN" pageId="#page-what-is-pamun"></div>
+              <div class="group-item" icon="icons/about/what_is_pan_asia_mun.png" string="What is Pan Asia MUN" pageId="#page-what-is-pamun"></div>
+              <div class="group-item" icon="icons/about/what_is_pan_asia_mun.png" string="What is Pan Asia MUN" pageId="#page-what-is-pamun"></div>
+              <div class="group-item" icon="icons/about/what_is_pan_asia_mun.png" string="What is Pan Asia MUN" pageId="#page-what-is-pamun"></div>
+              <div class="group-item" icon="icons/about/what_is_pan_asia_mun.png" string="What is Pan Asia MUN" pageId="#page-what-is-pamun"></div>
+            </div>
+          </div>
         </div>
         <!--
         <ul class="list-group">
@@ -381,5 +392,5 @@
 
     </div> <!-- end of wrapper -->
   </body>
-    <script src="js/less-1.7.0.min.js"></script>
+  <script src="js/less-1.7.0.min.js"></script>
 </html>
