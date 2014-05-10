@@ -1,3 +1,5 @@
+@import "util.less";
+
 .page {
   width: 100%;
   height: 100%;
@@ -14,13 +16,20 @@
   top: 0px;
   margin: 0;
   height: unit(`scale(35)`,px);
-  line-height: unit(`scale(35)`,px);
-  text-align: center;
-  font-size: unit(`scale(14)`,px);
+  line-height: unit(`scale(16)`,px);
+  font-size: unit(`scale(16)`,px);
+  font-family: futura_medium;
 }
 
-.second-layer-page .header {
-  font-size: unit(`scale(14)`,px);
+.page .header img {
+  .vertical-center;
+  left: unit(`scale(39.5)`,px);
+  width: unit(`scale(25)`,px);
+}
+
+.page .header>div {
+  .vertical-center;
+  left: unit(`scale(67.5)`,px);
 }
 
 .page .content {
@@ -31,4 +40,5 @@
   display: block;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+  font-family: segoeui;
 }

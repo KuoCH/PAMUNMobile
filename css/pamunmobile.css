@@ -2,3 +2,41 @@
   background: #4575AA;
   color:white;
 }
+
+h4 {
+  font-weight: bold;
+}
+
+@font-face
+{
+  font-family: futura_medium;
+  src: url(../fonts/futura lt medium.ttf);
+}
+
+@font-face
+{
+  font-family: segoeui;
+  src: url(../fonts/segoeui.ttf);
+}
+
+@font-face
+{
+  font-family: segoeui;
+  src: url(../fonts/segoeuib.ttf);
+  font-weight: bold;
+}
+
+@font-face
+{
+  font-family: segoeui;
+  font-style: italic;
+  src: url(../fonts/segoeuii.ttf);
+}
+
+@font-face
+{
+  font-family: segoeui;
+  font-weight: bold;
+  font-style: italic;
+  src: url(../fonts/segoeuiz.ttf);
+}

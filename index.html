@@ -5,20 +5,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/page.less" rel="stylesheet/less">
     <link href="css/sidebar.less" rel="stylesheet/less">
+    <link href="css/page.less" rel="stylesheet/less">
     <link href="css/pamunmobile.css" rel="stylesheet">
     <script src="js/util.js"></script>
     <script src="js/jquery-1.11.0.js"></script>
     <script src="js/jquery.mobile.touchevent.js"></script>
     <!--
+    -->
     <script>
       less = {
       env: "development",
       logLevel: 2,
       };
     </script>
-    -->
     <script src="js/page.js"></script>
     <script src="js/sidebar.js"></script>
     <script src="js/scrollIwant.js"></script>
@@ -29,8 +29,8 @@
 
       <div id="sidebar" class="sb-sidebar">
         <div class="sidebar-header">
-          <div class="homepage">
-            <img src="icons/logo.png"> <p class="homepage-string">PAMUN2014</p>
+          <div class="homepage" pageId="#page-home">
+            <img src="icons/logo.png"> <div class="string"><span class="big">PAMUN</span><span class="small">2014</span></div>
           </div>
           <img class="hide-sidebar" src="icons/hide_sidebar.png">
         </div>
@@ -65,7 +65,7 @@
               <div class="group-item" icon="icons/preparation/country_assignments.png" string="Country Assignments" pageId="#page-country-assignments"></div>
               <div class="group-item" icon="icons/preparation/position_papers.png" string="Position Papers" pageId="#page-position-papers"></div>
             </div>
-            <div class="group" icon="icons/contact/contact_us.png" string="Contact Us">
+            <div class="group" icon="icons/contact/contact_us.png" string="Contact Us" pageId="#page-contact-us">
             </div>
             <div class="group" icon="icons/media/media.png" string="Media">
               <div class="group-item" icon="icons/media/posters.png" string="Posters" pageId="#page-posters"></div>
@@ -80,7 +80,6 @@
         <a onclick="showPage('#page-committees')" class="list-item">Committees</a>
         <a onclick="showPage('#page-registration')" class="list-item">Registration</a>
         <a onclick="showPage('#page-preparation')" class="list-item">Preparation</a>
-        <a onclick="showPage('#page-contact-us')" class="list-item">Contact Us</a>
         <a onclick="showPage('#page-media')" class="list-item">Media</a>
         -->
       </div>
@@ -93,7 +92,7 @@
           </div>
           <div class="content">
             <p>
-            Here is the homecontent<br>Here is the homecontent<br>Here is the homecontent<br>Here is the homecontent<br>Here is the homecontent<br>Here is the homecontent<br>Here is the homecontent<br>
+            Here is the <b>homecontent</b><br>Here is the <i>homecontent</i><br>Here is the <b><i>homecontent</i></b><br>Here is the homecontent<br>Here is the homecontent<br>Here is the homecontent<br>Here is the homecontent<br>
             </p>
           </div>
         </div>

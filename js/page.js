@@ -7,16 +7,18 @@ $(window).load( function () {
   mainPage.addClass('showing-page');
   showingPageId = '#' + mainPage.attr('id');
   $('.page .header').each(function(i,element) {
-    //element.innerHTML=''+element.innerHTML;
+    element.innerHTML='<img src="icons/logo.png"><div>'+element.innerHTML+'</div>';
   });
 
   new ScrollIWant('.page .content', false, true);
 });
 
-function showPage(targetPageId){
+showPage = function (e){
+  var targetPageId = $(this).attr('pageId');
   var targetNode = $(targetPageId);
   if (!targetNode.length) {
-    console.error('Bad targetId:'+targetPageId);
+    console.error('Bad targetId:' + targetPageId + '\nfor element:');
+    console.error(this);
     return;
   }
   var sourceNode = $(showingPageId);
