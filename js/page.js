@@ -7,7 +7,7 @@ $(window).load( function () {
   mainPage.addClass('showing-page');
   showingPageId = '#' + mainPage.attr('id');
   $('.page .header').each(function(i,element) {
-    element.innerHTML="<a class=\"btn btn-default menu-toggle\"><i class=\"icon-reorder\"></i></a>"+element.innerHTML;
+    //element.innerHTML=''+element.innerHTML;
   });
 
   new ScrollIWant('.page .content', false, true);

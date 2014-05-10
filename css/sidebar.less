@@ -40,10 +40,9 @@
   margin: unit(`scale(5)`,px);
   height: unit(`scale(20)`,px);
   width: unit(`scale(20)`,px);
-  display: inline-block;
-  background:url(../icons/menu.png) center no-repeat;
   position: absolute;
-  left:0px
+  left:0px;
+  z-index: 1;
 }
 
 .sb-sidebar .sidebar-header {
@@ -59,6 +58,12 @@
 .sb-sidebar .homepage>* {
   .vertical-center;
 }
+
+.sb-sidebar .homepage>img {
+  width: unit(`scale(31)`,px);
+  left: unit(`scale(20)`,px);
+}
+
 .sb-sidebar .hide-sidebar {
   width: unit(`scale(13)`,px);
   height: unit(`scale(25)`,px);
@@ -87,11 +92,22 @@
 
 .sb-sidebar .groups {
   width: unit(`scale(150)`,px);
-  height: 100%;
+  max-height: 100%;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 }
+/*
+.sb-sidebar .group {
+  height: unit(`scale(33)`,px);
+  overflow: hidden;
+  transition: all 0.3s ease 0s;
+}
 
+.sb-sidebar .group.group-active {
+  height: auto;
+  transition: all 0.3s ease 0s;
+}
+*/
 .sb-sidebar .group-title {
   background: #383C47;
   height: unit(`scale(33)`,px);
@@ -101,29 +117,43 @@
 
 .sb-sidebar .group-title>img {
   .vertical-center;
-  width: unit(`scale(10)`,px);
-  left: unit(`scale(11)`,px);
+  width: unit(`scale(15)`,px);
+  left: unit(`scale(8)`,px);
 }
 
 .sb-sidebar .group-title>.string {
   .vertical-center;
-  left: unit(`scale(40)`,px);
+  left: unit(`scale(30)`,px);
+  font-size: unit(`scale(12)`, px);
 }
 
 .sb-sidebar .group-item {
   background: #454756;
-  height: unit(`scale(16.5)`,px);
+  height: 0;
   width: unit(`scale(150)`,px);
   position: relative;
+  transition: all 0.2s ease 0s;
+}
+.sb-sidebar .group-active .group-item {
+  height: unit(`scale(16.5)`,px);
+  transition: all 0.2s ease 0s;
 }
 
 .sb-sidebar .group-item>img {
   .vertical-center;
   width: unit(`scale(8)`,px);
-  left: unit(`scale(38)`,px);
+  left: unit(`scale(30)`,px);
 }
 
 .sb-sidebar .group-item>.string {
   .vertical-center;
-  left: unit(`scale(50)`,px);
+  left: unit(`scale(42)`,px);
+  font-size: unit(`scale(10)`, px);
+}
+
+.sb-sidebar .group-item>* {
+  display: none;
+}
+.sb-sidebar .group-active .group-item>* {
+  display: block;
 }

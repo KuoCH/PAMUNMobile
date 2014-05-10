@@ -1,3 +1,5 @@
+//Only implement y-direction for now
+
 var ScrollIWant = function(eSel, x, y) {
   // Variables to track inputs
   var originY = originX = 0;
@@ -5,7 +7,7 @@ var ScrollIWant = function(eSel, x, y) {
   var maxScrollTop = 0;
   var didScroll = false;
 
-  if (!x&&!y) {
+  if (!y) {
     console.warn('Didn\'t set direction for elem:'+eSel);
     return;
   }
@@ -32,7 +34,6 @@ var ScrollIWant = function(eSel, x, y) {
     }
     this.scrollTop = newScrollTop;
     didScroll = true;
-    console.log(this);
   });
   elem.on('touchend', function(event){
     if (didScroll) {

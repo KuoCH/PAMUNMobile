@@ -3,7 +3,7 @@
   <head>
     <title>PAMUN 2014</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/page.less" rel="stylesheet/less">
     <link href="css/sidebar.less" rel="stylesheet/less">
@@ -25,12 +25,12 @@
   </head>
 
   <body>
-    <div id="wrapper" class="sb-active">
+    <div id="wrapper">
 
       <div id="sidebar" class="sb-sidebar">
         <div class="sidebar-header">
           <div class="homepage">
-            <img> <p class="homepage-string">PAMUN2014</p>
+            <img src="icons/logo.png"> <p class="homepage-string">PAMUN2014</p>
           </div>
           <img class="hide-sidebar" src="icons/hide_sidebar.png">
         </div>
@@ -39,58 +39,54 @@
           <div class="groups">
             <div class="group" icon="icons/about/about.png" string="About Us">
               <div class="group-item" icon="icons/about/what_is_pan_asia_mun.png" string="What is Pan Asia MUN" pageId="#page-what-is-pamun"></div>
-              <div class="group-item" icon="icons/about/what_is_pan_asia_mun.png" string="What is Pan Asia MUN" pageId="#page-what-is-pamun"></div>
-              <div class="group-item" icon="icons/about/what_is_pan_asia_mun.png" string="What is Pan Asia MUN" pageId="#page-what-is-pamun"></div>
-              <div class="group-item" icon="icons/about/what_is_pan_asia_mun.png" string="What is Pan Asia MUN" pageId="#page-what-is-pamun"></div>
-              <div class="group-item" icon="icons/about/what_is_pan_asia_mun.png" string="What is Pan Asia MUN" pageId="#page-what-is-pamun"></div>
-              <div class="group-item" icon="icons/about/what_is_pan_asia_mun.png" string="What is Pan Asia MUN" pageId="#page-what-is-pamun"></div>
+              <div class="group-item" icon="icons/about/what_is_mun.png" string="What is Model UN" pageId="#page-what-is-mun"></div>
+              <div class="group-item" icon="icons/about/meet_the_team.png" string="Meet the Team" pageId="#page-meet-the-team"></div>
+              <div class="group-item" icon="icons/about/sponsors.png" string="Sponsors" pageId="#page-sponsors"></div>
             </div>
-            <div class="group" icon="icons/about/about.png" string="About Us">
-              <div class="group-item" icon="icons/about/what_is_pan_asia_mun.png" string="What is Pan Asia MUN" pageId="#page-what-is-pamun"></div>
-              <div class="group-item" icon="icons/about/what_is_pan_asia_mun.png" string="What is Pan Asia MUN" pageId="#page-what-is-pamun"></div>
-              <div class="group-item" icon="icons/about/what_is_pan_asia_mun.png" string="What is Pan Asia MUN" pageId="#page-what-is-pamun"></div>
-              <div class="group-item" icon="icons/about/what_is_pan_asia_mun.png" string="What is Pan Asia MUN" pageId="#page-what-is-pamun"></div>
-              <div class="group-item" icon="icons/about/what_is_pan_asia_mun.png" string="What is Pan Asia MUN" pageId="#page-what-is-pamun"></div>
-              <div class="group-item" icon="icons/about/what_is_pan_asia_mun.png" string="What is Pan Asia MUN" pageId="#page-what-is-pamun"></div>
+            <div class="group" icon="icons/conference/conference.png" string="Conference">
+              <div class="group-item" icon="icons/conference/schedule.png" string="Schedule" pageId="#page-schedule"></div>
+              <div class="group-item" icon="icons/conference/social_events.png" string="Social Events" pageId="#page-social-events"></div>
+              <div class="group-item" icon="icons/conference/conference_policies.png" string="Conference Policies" pageId="#page-conference-policies"></div>
+              <div class="group-item" icon="icons/conference/faqs.png" string="FAQs" pageId="#page-faqs"></div>
             </div>
-          </div>
+            <div class="group" icon="icons/committees/committees.png" string="Committees">
+              <div class="group-item" icon="icons/committees/committees.png" string="Committee 1" pageId="#page-committee-1"></div>
+            </div>
+            <div class="group" icon="icons/registration/registration.png" string="Registration">
+              <div class="group-item" icon="icons/registration/delegate_registration.png" string="Delegate Registration" pageId="#page-delegate-registration"></div>
+              <div class="group-item" icon="icons/registration/school_registration.png" string="School Registration" pageId="#page-school-registration"></div>
+              <div class="group-item" icon="icons/registration/payment_registration.png" string="Payment Information" pageId="#page-payment-information"></div>
+              <div class="group-item" icon="icons/registration/hotel_information.png" string="Hotel Information" pageId="#page-hotel-information"></div>
+            </div>
+            <div class="group" icon="icons/preparation/preparation.png" string="Preparation">
+              <div class="group-item" icon="icons/preparation/rules_of_procedure.png" string="Rules of Procedure" pageId="#page-rules-of-procedure"></div>
+              <div class="group-item" icon="icons/preparation/conference_tips.png" string="Conference Tips" pageId="#page-conference-tips"></div>
+              <div class="group-item" icon="icons/preparation/background_guide.png" string="Background Guides" pageId="#page-background-guides"></div>
+              <div class="group-item" icon="icons/preparation/country_assignments.png" string="Country Assignments" pageId="#page-country-assignments"></div>
+              <div class="group-item" icon="icons/preparation/position_papers.png" string="Position Papers" pageId="#page-position-papers"></div>
+            </div>
+            <div class="group" icon="icons/contact/contact_us.png" string="Contact Us">
+            </div>
+            <div class="group" icon="icons/media/media.png" string="Media">
+              <div class="group-item" icon="icons/media/posters.png" string="Posters" pageId="#page-posters"></div>
+              <div class="group-item" icon="icons/media/video.png" string="Video" pageId="#page-video"></div>
+            </div>
+          </div> <!-- end of groups -->
         </div>
         <!--
-        <ul class="list-group">
-          <a onclick="showPage('#page-home')" class="list-item">PAMUN</a>
-          <a onclick="showPage('#page-about')" class="list-item">About</a>
-          <a onclick="showPage('#page-what-is-pamun')" class="list-item list-item-second-layer">What is Pan Asia MUN</a>
-          <a onclick="showPage('#page-what-is-mun')" class="list-item list-item-second-layer">What is Model UN</a>
-          <a onclick="showPage('#page-meet-the-team')" class="list-item list-item-second-layer">Meet the Team</a>
-          <a onclick="showPage('#page-sponsors')" class="list-item list-item-second-layer">Sponsors</a>
-          <a onclick="showPage('#page-conference')" class="list-item">Conference</a>
-          <a onclick="showPage('#page-schedule')" class="list-item list-item-second-layer">Schedule</a>
-          <a onclick="showPage('#page-social-events')" class="list-item list-item-second-layer">Social Events</a>
-          <a onclick="showPage('#page-conference-policies')" class="list-item list-item-second-layer">Conference Policies</a>
-          <a onclick="showPage('#page-faqs')" class="list-item list-item-second-layer">FAQs</a>
-          <a onclick="showPage('#page-committees')" class="list-item">Committees</a>
-          <a onclick="showPage('#page-committee-1')" class="list-item list-item-second-layer">Committee 1</a>
-          <a onclick="showPage('#page-registration')" class="list-item">Registration</a>
-          <a onclick="showPage('#page-delegate-registration')" class="list-item list-item-second-layer">Delegate Registration</a>
-          <a onclick="showPage('#page-school-registration')" class="list-item list-item-second-layer">School Registration</a>
-          <a onclick="showPage('#page-payment-information')" class="list-item list-item-second-layer">Payment Information</a>
-          <a onclick="showPage('#page-hotel-information')" class="list-item list-item-second-layer">Hotel Information</a>
-          <a onclick="showPage('#page-preparation')" class="list-item">Preparation</a>
-          <a onclick="showPage('#page-rules-of-procedure')" class="list-item list-item-second-layer">Rules of Procedure</a>
-          <a onclick="showPage('#page-conference-tips')" class="list-item list-item-second-layer">Conference Tips</a>
-          <a onclick="showPage('#page-background-guides')" class="list-item list-item-second-layer">Background Guides</a>
-          <a onclick="showPage('#page-country-assignments')" class="list-item list-item-second-layer">Country Assignments</a>
-          <a onclick="showPage('#page-position-papers')" class="list-item list-item-second-layer">Position Papers</a>
-          <a onclick="showPage('#page-contact-us')" class="list-item">Contact Us</a>
-          <a onclick="showPage('#page-media')" class="list-item">Media</a>
-          <a onclick="showPage('#page-posters')" class="list-item list-item-second-layer">Posters</a>
-          <a onclick="showPage('#page-video')" class="list-item list-item-second-layer">Video</a>
-        </ul>
+        <a onclick="showPage('#page-home')" class="list-item">PAMUN</a>
+        <a onclick="showPage('#page-about')" class="list-item">About</a>
+        <a onclick="showPage('#page-conference')" class="list-item">Conference</a>
+        <a onclick="showPage('#page-committees')" class="list-item">Committees</a>
+        <a onclick="showPage('#page-registration')" class="list-item">Registration</a>
+        <a onclick="showPage('#page-preparation')" class="list-item">Preparation</a>
+        <a onclick="showPage('#page-contact-us')" class="list-item">Contact Us</a>
+        <a onclick="showPage('#page-media')" class="list-item">Media</a>
         -->
       </div>
 
       <div class="sb-content">
-
+        <img class="menu-toggle" src="icons/menu.png">
         <div id="page-home" class="page">
           <div class="header">
             PAMUN 2014
