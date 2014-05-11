@@ -7,7 +7,7 @@ $(window).load( function () {
   mainPage.addClass('showing-page');
   showingPageId = '#' + mainPage.attr('id');
   $('.page .header').each(function(i,element) {
-    element.innerHTML='<img src="icons/logo.png"><div>'+element.innerHTML+'</div>';
+    element.innerHTML='<img src="icons/logo_white.png"><div>'+element.innerHTML+'</div>';
   });
 
   new ScrollIWant('.page .content', false, true);

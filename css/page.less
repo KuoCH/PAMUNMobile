@@ -11,6 +11,7 @@
 }
 
 .page .header {
+  .disable-select;
   width: 100%;
   position: relative;
   top: 0px;
@@ -18,7 +19,7 @@
   height: unit(`scale(35)`,px);
   line-height: unit(`scale(16)`,px);
   font-size: unit(`scale(16)`,px);
-  font-family: futura_medium;
+  font-family: futura_oblique;
 }
 
 .page .header img {
@@ -32,13 +33,34 @@
   left: unit(`scale(67.5)`,px);
 }
 
+#page-home .header>div>.big {
+  font-size: unit(`scale(14)`,px);
+  line-height: unit(`scale(14)`, px);
+  letter-spacing: unit(`scale(0.35)`, px);
+  height: unit(`scale(14)`, px);
+  width: 100%;
+  .transform(0.9873, 1.0);
+  margin-bottom: unit(`scale(3)`, px);
+}
+#page-home .header>div>.small {
+  font-size: unit(`scale(7)`,px);
+  height: unit(`scale(6)`, px);
+  width: 100%;
+  text-align:center;
+  line-height: unit(`scale(6)`, px);
+  .transform(1.36, 1.0);
+}
+
 .page .content {
   position: absolute;
   margin: unit(`scale(10)`,px);
   top: unit(`scale(40)`,px);
   bottom: 0px;
   display: block;
-  overflow-y: auto;
+  overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
   font-family: segoeui;
+  text-align: justify;
+  font-size: unit(`scale(10)`,px);
+  letter-spacing: unit(`scale(0.05)`,px);
 }
