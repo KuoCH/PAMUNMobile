@@ -23,6 +23,7 @@ $(window).load( function () {
 
   $('.sb-sidebar .homepage').on('tap', showPage);
   new OnPress('.sb-sidebar .homepage');
+  new OnPress('.hide-sidebar');
 
   $('.sb-sidebar .group').each(function(index){
     jThis = $(this)
@@ -53,5 +54,8 @@ $(window).load( function () {
     return false;
   });
   new OnPress('.sb-sidebar .group-item');
+
+  new OnPress('.menu-toggle');
+
   window.scrollTo(0,1);
 });

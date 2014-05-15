@@ -1,13 +1,25 @@
 @import "util.less";
 
 .page {
+  position:absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  z-index: -100;
+  /*
   display: none;
+  */
 }
 
 .page.showing-page {
+  position:absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  /*
   display: inline-block;
+  */
 }
 
 .page .header {
@@ -18,22 +30,31 @@
   margin: 0;
   height: unit(`scale(35)`,px);
   line-height: unit(`scale(16)`,px);
-  font-size: unit(`scale(16)`,px);
+  font-size: unit(`scale(13)`,px);
   font-family: futura_oblique;
 }
-
-.page .header img {
+.page .header>.header-wrapper {
+  .both-center;
+  height: unit(`scale(16)`,px);
+}
+.page .header>.header-wrapper>img {
   .vertical-center;
-  left: unit(`scale(39.5)`,px);
-  width: unit(`scale(25)`,px);
+  left: unit(`scale(3)`,px);
+  width: unit(`scale(16)`,px);
+  height: unit(`scale(16)`,px);
 }
 
-.page .header>div {
+.page .header>.header-wrapper>.string {
   .vertical-center;
-  left: unit(`scale(67.5)`,px);
+  white-space:nowrap;
+  left: unit(`scale(20)`,px);
+  /*
+  right: 0px;
+  text-align:center;
+  */
 }
 
-#page-home .header>div>.big {
+#page-home .header>.header-wrapper>.string>.big {
   font-size: unit(`scale(14)`,px);
   line-height: unit(`scale(14)`, px);
   letter-spacing: unit(`scale(0.35)`, px);
@@ -42,7 +63,7 @@
   .transform(0.9873, 1.0);
   margin-bottom: unit(`scale(3)`, px);
 }
-#page-home .header>div>.small {
+#page-home .header>.header-wrapper>.string>.small {
   font-size: unit(`scale(7)`,px);
   height: unit(`scale(6)`, px);
   width: 100%;
@@ -52,9 +73,10 @@
 }
 
 .page .content {
+  width: 100%;
   position: absolute;
-  margin: unit(`scale(10)`,px);
-  top: unit(`scale(40)`,px);
+  padding: unit(`scale(40)`,px) unit(`scale(15)`,px) unit(`scale(50)`,px);
+  top: unit(`scale(35)`,px);
   bottom: 0px;
   display: block;
   overflow-y: hidden;
@@ -63,4 +85,5 @@
   text-align: justify;
   font-size: unit(`scale(10)`,px);
   letter-spacing: unit(`scale(0.05)`,px);
+  background: #FFFFFF;
 }

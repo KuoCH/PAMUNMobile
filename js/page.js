@@ -6,8 +6,13 @@ $(window).load( function () {
   var mainPage = $('.page').first();
   mainPage.addClass('showing-page');
   showingPageId = '#' + mainPage.attr('id');
-  $('.page .header').each(function(i,element) {
-    element.innerHTML='<img src="icons/logo_white.png"><div>'+element.innerHTML+'</div>';
+  $('.page .header').each(function(i) {
+    this.innerHTML='<div class="header-wrapper"><img src="icons/logo_white.png"><div class="string">'+this.innerHTML+'</div></div>';
+  });
+
+  $('.page .header .header-wrapper').each(function(i) {
+    jThis = $(this);
+    jThis.width(4 + jThis.children('img').width() + jThis.children('.string').width() );
   });
 
   new ScrollIWant('.page .content', false, true);
