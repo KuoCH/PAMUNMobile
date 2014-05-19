@@ -1,11 +1,14 @@
 //Need init
 //ex: showingPageId = '#page-main';
 var showingPageId;
+var DEFAULT_PAGEID;
 
 $(window).load( function () {
-  var mainPage = $('.page').first();
-  mainPage.addClass('showing-page');
-  showingPageId = '#' + mainPage.attr('id');
+
+  DEFAULT_PAGEID = '#' + $('.page').first().attr('id');
+  $(window).on('hashchange', checkUrlHash);
+  checkUrlHash();
+
   $('.page .header').each(function(i) {
     this.innerHTML='<div class="header-wrapper"><img src="icons/logo_white.png"><div class="string">'+this.innerHTML+'</div></div>';
   });
@@ -18,19 +21,24 @@ $(window).load( function () {
   new ScrollIWant('.page .content', false, true);
 });
 
-showPage = function (e){
-  var targetPageId = $(this).attr('pageId');
+checkUrlHash = function() {
+  console.log('hahahah');
+  if ($(window.location.hash).length == 0) {
+    window.location.hash = DEFAULT_PAGEID;
+  } else if ( showingPageId != window.location.hash ) {
+    showPageById( window.location.hash );
+  }
+};
+
+showPageById = function (targetPageId){
   var targetNode = $(targetPageId);
   if (!targetNode.length) {
-    console.error('Bad targetId:' + targetPageId + '\nfor element:');
-    console.error(this);
-    return;
+    console.error('Bad targetId:' + targetPageId + '\nShould never get here!');
+    targetPageId = DEFAULT_PAGEID;
   }
   var sourceNode = $(showingPageId);
   if (sourceNode.length) {
     sourceNode.removeClass('showing-page');
-  } else {
-    console.warn('variable showingPageId doesn\'t set appropriately.');
   }
   targetNode.addClass('showing-page');
   showingPageId = targetPageId;
@@ -38,4 +46,4 @@ showPage = function (e){
   if ($('#wrapper').hasClass('sb-active')) {
     $('#wrapper').removeClass('sb-active');
   }
-}
+};

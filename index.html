@@ -21,8 +21,8 @@
     -->
     <script>
       less = {
-      env: "development",
-      logLevel: 2,
+        env: "development",
+        logLevel: 2,
       };
     </script>
     <script src="js/page.js"></script>
@@ -45,21 +45,25 @@
         <div class="groups-wrapper">
           <div class="groups">
             <div class="group" icon="icons/about/about.png" string="About Us">
+              <div class="group-item" icon="icons/about/welcome_from_sg.png" string="Welcome from SG" pageId="#page-welcome-from-sg"></div>
               <div class="group-item" icon="icons/about/what_is_pan_asia_mun.png" string="What is Pan Asia MUN" pageId="#page-what-is-pamun"></div>
               <div class="group-item" icon="icons/about/what_is_mun.png" string="What is Model UN" pageId="#page-what-is-mun"></div>
               <div class="group-item" icon="icons/about/meet_the_team.png" string="Meet the Team" pageId="#page-meet-the-team"></div>
               <div class="group-item" icon="icons/about/sponsors.png" string="Sponsors" pageId="#page-sponsors"></div>
             </div>
             <div class="group" icon="icons/conference/conference.png" string="Conference">
+              <div class="group-item" icon="icons/conference/conference_overview.png" string="Conference Overview" pageId="#page-conference-overview"></div>
               <div class="group-item" icon="icons/conference/schedule.png" string="Schedule" pageId="#page-schedule"></div>
               <div class="group-item" icon="icons/conference/social_events.png" string="Social Events" pageId="#page-social-events"></div>
               <div class="group-item" icon="icons/conference/conference_policies.png" string="Conference Policies" pageId="#page-conference-policies"></div>
               <div class="group-item" icon="icons/conference/faqs.png" string="FAQs" pageId="#page-faqs"></div>
             </div>
             <div class="group" icon="icons/committees/committees.png" string="Committees">
+              <div class="group-item" icon="icons/committees/letter_from_academics.png" string="Letter" pageId="#page-letter-from-academics"></div>
               <div class="group-item" icon="icons/committees/committees.png" string="Committee 1" pageId="#page-committee-1"></div>
             </div>
             <div class="group" icon="icons/registration/registration.png" string="Registration">
+              <div class="group-item" icon="icons/registration/registration_overview.png" string="Overview" pageId="#page-registration-overview"></div>
               <div class="group-item" icon="icons/registration/delegate_registration.png" string="Delegate Registration" pageId="#page-delegate-registration"></div>
               <div class="group-item" icon="icons/registration/school_registration.png" string="School Registration" pageId="#page-school-registration"></div>
               <div class="group-item" icon="icons/registration/payment_registration.png" string="Payment Information" pageId="#page-payment-information"></div>
@@ -72,7 +76,9 @@
               <div class="group-item" icon="icons/preparation/country_assignments.png" string="Country Assignments" pageId="#page-country-assignments"></div>
               <div class="group-item" icon="icons/preparation/position_papers.png" string="Position Papers" pageId="#page-position-papers"></div>
             </div>
-            <div class="group" icon="icons/contact/contact_us.png" string="Contact Us" pageId="#page-contact-us">
+            <div class="group" icon="icons/contact/contact_us.png" string="Contact Us">
+              <div class="group-item" icon="icons/contact/visit_us.png" string="Visit Us" pageId="#page-visit-us"></div>
+              <div class="group-item" icon="icons/contact/mail_us.png" string="Mail Us" pageId="#page-mail-us"></div>
             </div>
             <div class="group" icon="icons/media/media.png" string="Media">
               <div class="group-item" icon="icons/media/posters.png" string="Posters" pageId="#page-posters"></div>
@@ -105,11 +111,12 @@
           </div>
         </div>
 
-        <div id="page-about" class="page">
+        <div id="page-welcome-from-sg" class="page">
           <div class="header">
-            About
+            Welcome from SG
           </div>
           <div class="content">
+            <p>
             Dear delegates and friends of Pan Asia MUN,<br>
             <br>
             On behalf of the PAMUN organizing team, we warmly invite you to join us from December 04 to December 07, 2014 in Taipei, Taiwan for Pan Asia Model United Nations 2014.<br>
@@ -118,7 +125,7 @@
             <br>
             After serving as one of the Under Secretary Generals of Academics for PAMUN 2013, I am humbled and honored to be returning as the Secretary General for this year’s conference. I hope you will join me at Pan Asia Model United Nations 2014, as it is sure to be an unforgettable journey of profound debate, self-discovery, and lasting friendships. <br>
             <br>
-            If there are any additional questions, comments, or concerns, please visit our <a onclick="showPage('#page-contact-us')">Contact Us</a> page for the relevant contact information, or feel free to contact me personally at <a>joyce.lee@panasiamun.com</a>. <br>
+            If there are any additional questions, comments, or concerns, please visit our <a onclick="showPage('#page-visit-us')">Visit Us</a> page for the relevant contact information, or feel free to contact me personally at <a>joyce.lee@panasiamun.com</a>. <br>
             <br>
             We look forward to seeing you in December in Taipei!<br>
             <br>
@@ -127,10 +134,11 @@
             Joyce Lee<br>
             Secretary General<br>
             Pan Asia Model United Nations 2014<br>
+            </p>
           </div>
         </div>
 
-        <div id="page-what-is-pamun" class="page second-layer-page">
+        <div id="page-what-is-pamun" class="page">
           <div class="header">
             What is Pan Asia MUN
           </div>
@@ -146,7 +154,7 @@
           </div>
         </div>
 
-        <div id="page-what-is-mun" class="page second-layer-page">
+        <div id="page-what-is-mun" class="page">
           <div class="header">
             What is Model UN
           </div>
@@ -175,7 +183,7 @@
           </div>
         </div>
 
-        <div id="page-meet-the-team" class="page second-layer-page">
+        <div id="page-meet-the-team" class="page">
           <div class="header">
             Meet the Team
           </div>
@@ -184,7 +192,7 @@
           </div>
         </div>
 
-        <div id="page-sponsors" class="page second-layer-page">
+        <div id="page-sponsors" class="page">
           <div class="header">
             Sponsors
           </div>
@@ -193,16 +201,16 @@
           </div>
         </div>
 
-        <div id="page-conference" class="page">
+        <div id="page-conference-overview" class="page">
           <div class="header">
-            Conference
+            Conference Overview
           </div>
           <div class="content">
             Here is content
           </div>
         </div>
 
-        <div id="page-schedule" class="page second-layer-page">
+        <div id="page-schedule" class="page">
           <div class="header">
             Schedule
           </div>
@@ -211,7 +219,7 @@
           </div>
         </div>
 
-        <div id="page-social-events" class="page second-layer-page">
+        <div id="page-social-events" class="page">
           <div class="header">
             Social Events
           </div>
@@ -220,7 +228,7 @@
           </div>
         </div>
 
-        <div id="page-conference-policies" class="page second-layer-page">
+        <div id="page-conference-policies" class="page">
           <div class="header">
             Conference Policies
           </div>
@@ -229,7 +237,7 @@
           </div>
         </div>
 
-        <div id="page-faqs" class="page second-layer-page">
+        <div id="page-faqs" class="page">
           <div class="header">
             FAQs
           </div>
@@ -238,16 +246,16 @@
           </div>
         </div>
 
-        <div id="page-committees" class="page">
+        <div id="page-letter-from-academics" class="page">
           <div class="header">
-            Committees
+            Letter
           </div>
           <div class="content">
             Here is content
           </div>
         </div>
 
-        <div id="page-committee-1" class="page second-layer-page">
+        <div id="page-committee-1" class="page">
           <div class="header">
             Committee 1
           </div>
@@ -256,16 +264,16 @@
           </div>
         </div>
 
-        <div id="page-registration" class="page">
+        <div id="page-registration-overview" class="page">
           <div class="header">
-            Registration
+            Registration Overview
           </div>
           <div class="content">
             Here is content
           </div>
         </div>
 
-        <div id="page-delegate-registration" class="page second-layer-page">
+        <div id="page-delegate-registration" class="page">
           <div class="header">
             Delegate Registration
           </div>
@@ -274,7 +282,7 @@
           </div>
         </div>
 
-        <div id="page-school-registration" class="page second-layer-page">
+        <div id="page-school-registration" class="page">
           <div class="header">
             School Registration
           </div>
@@ -283,7 +291,7 @@
           </div>
         </div>
 
-        <div id="page-payment-information" class="page second-layer-page">
+        <div id="page-payment-information" class="page">
           <div class="header">
             Payment Information
           </div>
@@ -292,7 +300,7 @@
           </div>
         </div>
 
-        <div id="page-hotel-information" class="page second-layer-page">
+        <div id="page-hotel-information" class="page">
           <div class="header">
             Hotel Information
           </div>
@@ -310,7 +318,7 @@
           </div>
         </div>
 
-        <div id="page-rules-of-procedure" class="page second-layer-page">
+        <div id="page-rules-of-procedure" class="page">
           <div class="header">
             Rules of Procedure
           </div>
@@ -319,7 +327,7 @@
           </div>
         </div>
 
-        <div id="page-conference-tips" class="page second-layer-page">
+        <div id="page-conference-tips" class="page">
           <div class="header">
             Conference Tips
           </div>
@@ -328,7 +336,7 @@
           </div>
         </div>
 
-        <div id="page-background-guides" class="page second-layer-page">
+        <div id="page-background-guides" class="page">
           <div class="header">
             Background Guides
           </div>
@@ -337,7 +345,7 @@
           </div>
         </div>
 
-        <div id="page-country-assignments" class="page second-layer-page">
+        <div id="page-country-assignments" class="page">
           <div class="header">
             Country Assignments
           </div>
@@ -346,7 +354,7 @@
           </div>
         </div>
 
-        <div id="page-position-papers" class="page second-layer-page">
+        <div id="page-position-papers" class="page">
           <div class="header">
             Position Papers
           </div>
@@ -355,9 +363,18 @@
           </div>
         </div>
 
-        <div id="page-contact-us" class="page">
+        <div id="page-visit-us" class="page">
           <div class="header">
-            Contact Us
+            Visit Us
+          </div>
+          <div class="content">
+            Here is content
+          </div>
+        </div>
+
+        <div id="page-mail-us" class="page">
+          <div class="header">
+            Mail Us
           </div>
           <div class="content">
             Here is content
@@ -373,7 +390,7 @@
           </div>
         </div>
 
-        <div id="page-posters" class="page second-layer-page">
+        <div id="page-posters" class="page">
           <div class="header">
             Posters
           </div>
@@ -382,7 +399,7 @@
           </div>
         </div>
 
-        <div id="page-video" class="page second-layer-page">
+        <div id="page-video" class="page">
           <div class="header">
             Video
           </div>

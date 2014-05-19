@@ -21,7 +21,7 @@ $(window).load( function () {
     return false;
   });
 
-  $('.sb-sidebar .homepage').on('tap', showPage);
+  $('.sb-sidebar .homepage').on('tap', tapToShowPage);
   new OnPress('.sb-sidebar .homepage');
   new OnPress('.hide-sidebar');
 
@@ -32,14 +32,14 @@ $(window).load( function () {
   $('.sb-sidebar .group-item').each(function(index){
     jThis = $(this);
     this.innerHTML = '<img src="'+jThis.attr('icon')+'"><p class="string">'+jThis.attr('string')+'</p>';
-    jThis.on('tap', showPage);
+    jThis.on('tap', tapToShowPage);
   })
   new ScrollIWant('.groups', false, true);
   $('.sb-sidebar .group-title').each(function(index) {
     jThis = $(this);
     jThisP = $(this.parentElement);
     if(jThisP.attr('pageId')){
-      jThisP.on('tap', showPage);
+      jThisP.on('tap', tapToShowPage);
       jThisP.addClass('group-active');
     } else { 
       jThis.on('tap', function(e) {
@@ -59,3 +59,7 @@ $(window).load( function () {
 
   window.scrollTo(0,1);
 });
+
+tapToShowPage = function(e) {
+  window.location.hash = $(this).attr('pageId');
+};
