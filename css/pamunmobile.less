@@ -1,3 +1,5 @@
+@import "util.less";
+
 .page .header {
   background: #4575AA;
   color:white;
@@ -43,4 +45,29 @@ h4 {
   font-weight: bold;
   font-style: italic;
   src: url(../fonts/segoeuiz.ttf);
+}
+
+#page-home .hotkey {
+  position: relative;
+  width: 100%;
+  height: unit(`scale(30)`, px);
+  background: #FFFFFF;
+}
+
+#page-home .hotkey.onpress {
+  background: #828282;
+}
+
+#page-home .hotkey img {
+  .vertical-center;
+  left: unit(`scale(14.5)`, px);
+  width: unit(`scale(25)`, px);
+}
+
+#page-home .hotkey .label {
+  .vertical-center;
+  left: unit(`scale(44.5)`, px);
+  font-size: unit(`scale(12)`, px);
+  font-family: futura_oblique;
+  color: #000000;
 }

@@ -38,15 +38,10 @@ $(window).load( function () {
   $('.sb-sidebar .group-title').each(function(index) {
     jThis = $(this);
     jThisP = $(this.parentElement);
-    if(jThisP.attr('pageId')){
-      jThisP.on('tap', tapToShowPage);
-      jThisP.addClass('group-active');
-    } else { 
-      jThis.on('tap', function(e) {
-        $(this.parentElement).toggleClass('group-active');
-        return false;
-      });
-    }
+    jThis.on('tap', function(e) {
+      $(this.parentElement).toggleClass('group-active');
+      return false;
+    });
   });
   new OnPress('.sb-sidebar .group-title');
   $('.sb-sidebar .groups-wrapper').on('tap', function(e) {

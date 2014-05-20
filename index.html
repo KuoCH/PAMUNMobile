@@ -27,6 +27,7 @@
     </script>
     <script src="js/page.js"></script>
     <script src="js/sidebar.js"></script>
+    <script src="js/pamunmobile.js"></script>
   </head>
 
   <body>
@@ -60,13 +61,13 @@
             </div>
             <div class="group" icon="icons/committees/committees.png" string="Committees">
               <div class="group-item" icon="icons/committees/letter_from_academics.png" string="Letter" pageId="#page-letter-from-academics"></div>
-              <div class="group-item" icon="icons/committees/committee-arf.png" string="ARF" pageId="#page-committee-arf"></div>
-              <div class="group-item" icon="icons/committees/committee-disec.png" string="DISEC" pageId="#page-committee-disec"></div>
-              <div class="group-item" icon="icons/committees/committee-unesco.png" string="UNESCO" pageId="#page-committee-unesco"></div>
-              <div class="group-item" icon="icons/committees/committee-unodc.png" string="UNODC" pageId="#page-committee-unodc"></div>
-              <div class="group-item" icon="icons/committees/committee-unsc.png" string="UNSC" pageId="#page-committee-unsc"></div>
-              <div class="group-item" icon="icons/committees/committee-usnsc.png" string="USNSC" pageId="#page-committee-usnsc"></div>
-              <div class="group-item" icon="icons/committees/committee-sco.png" string="SCO" pageId="#page-committee-sco"></div>
+              <div class="group-item" icon="icons/committees/committee_arf.png" string="ARF" pageId="#page-committee-arf"></div>
+              <div class="group-item" icon="icons/committees/committee_disec.png" string="DISEC" pageId="#page-committee-disec"></div>
+              <div class="group-item" icon="icons/committees/committee_unesco.png" string="UNESCO" pageId="#page-committee-unesco"></div>
+              <div class="group-item" icon="icons/committees/committee_unodc.png" string="UNODC" pageId="#page-committee-unodc"></div>
+              <div class="group-item" icon="icons/committees/committee_unsc.png" string="UNSC" pageId="#page-committee-unsc"></div>
+              <div class="group-item" icon="icons/committees/committee_usnsc.png" string="USNSC" pageId="#page-committee-usnsc"></div>
+              <div class="group-item" icon="icons/committees/committee_sco.png" string="SCO" pageId="#page-committee-sco"></div>
             </div>
             <div class="group" icon="icons/registration/registration.png" string="Registration">
               <div class="group-item" icon="icons/registration/registration_overview.png" string="Overview" pageId="#page-registration-overview"></div>
@@ -92,15 +93,6 @@
             </div>
           </div> <!-- end of groups -->
         </div>
-        <!--
-        <a onclick="showPage('#page-home')" class="list-item">PAMUN</a>
-        <a onclick="showPage('#page-about')" class="list-item">About</a>
-        <a onclick="showPage('#page-conference')" class="list-item">Conference</a>
-        <a onclick="showPage('#page-committees')" class="list-item">Committees</a>
-        <a onclick="showPage('#page-registration')" class="list-item">Registration</a>
-        <a onclick="showPage('#page-preparation')" class="list-item">Preparation</a>
-        <a onclick="showPage('#page-media')" class="list-item">Media</a>
-        -->
       </div>
 
       <div class="sb-content">
@@ -111,7 +103,11 @@
             <div class="small">2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4</div>
           </div>
           <div class="content">
-            <div class="hotkey log-hotkey" pageId="page-conference-overview"><img ></div>
+            <div class="hotkey log-hotkey" pageId="page-conference-overview"><img src="icons/hotkeys/hotkey_conference_overview.png"><div class="label">Conference</div></div>
+            <div class="hotkey" pageId="page-registration-overview"><img src="icons/hotkeys/hotkey_registration_overview.png"><div class="label">Registration</div></div>
+            <div class="hotkey" pageId="page-letter-from-academics"><img src="icons/hotkeys/hotkey_committees.png"><div class="label">Committees</div></div>
+            <div class="hotkey" pageId="page-social-events"><img src="icons/hotkeys/hotkey_social_events.png"><div class="label">Social Events</div></div>
+            <div class="hotkey" pageId="page-visit-us"><img src="icons/hotkeys/hotkey_contact_us.png"><div class="label">Contact Us</div></div>
           </div>
         </div>
 
