@@ -10,7 +10,7 @@ $(window).load( function () {
   checkUrlHash();
 
   $('.page .header').each(function(i) {
-    this.innerHTML='<div class="header-wrapper"><img src="icons/logo_white.png"><div class="string">'+this.innerHTML+'</div></div>';
+    this.innerHTML='<div class="header-wrapper"><img src="' + $(this).attr('icon') + '"><div class="string">'+this.innerHTML+'</div></div>';
   });
 
   $('.page .header .header-wrapper').each(function(i) {
@@ -22,7 +22,6 @@ $(window).load( function () {
 });
 
 checkUrlHash = function() {
-  console.log('hahahah');
   if ($(window.location.hash).length == 0) {
     window.location.hash = DEFAULT_PAGEID;
   } else if ( showingPageId != window.location.hash ) {
@@ -45,5 +44,6 @@ showPageById = function (targetPageId){
   //For sidebar on small screen
   if ($('#wrapper').hasClass('sb-active')) {
     $('#wrapper').removeClass('sb-active');
+    console.log('??');
   }
 };

@@ -31,7 +31,7 @@ $(window).load( function () {
   })
   $('.sb-sidebar .group-item').each(function(index){
     jThis = $(this);
-    this.innerHTML = '<img src="'+jThis.attr('icon')+'"><p class="string">'+jThis.attr('string')+'</p>';
+    this.innerHTML = '<img src="icons/dot.png"><p class="string">'+jThis.attr('string')+'</p>';
     jThis.on('tap', tapToShowPage);
   })
   new ScrollIWant('.groups', false, true);
@@ -56,5 +56,6 @@ $(window).load( function () {
 });
 
 tapToShowPage = function(e) {
+  $('#wrapper').removeClass('sb-active');
   window.location.hash = $(this).attr('pageId');
 };
