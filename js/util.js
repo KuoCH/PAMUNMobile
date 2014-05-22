@@ -1,3 +1,3 @@
 scale = function(design) { 
-  return $(window).width()*design/180; 
+  return Math.min($(window).width(), $(window).height())*design/180; 
 };
