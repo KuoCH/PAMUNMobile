@@ -63,6 +63,14 @@ $(window).load( function () {
 
 tapToShowPage = function(e) {
   $('#wrapper').removeClass('sb-active');
-  window.location.hash = $(this).attr('pageId');
+  targetId = $(this).attr('pageId');
+  if ( window.location.hash != targetId && window.location.hash != '#' + targetId) {
+    window.location.hash = targetId;
+  } else { 
+    if ($('#wrapper').hasClass('sb-active')) {
+      $('#wrapper').removeClass('sb-active');
+    }
+  }
   e.preventDefault();
+  return false;
 };

@@ -26,6 +26,10 @@ checkUrlHash = function() {
     window.location.hash = DEFAULT_PAGEID;
   } else if ( showingPageId != window.location.hash ) {
     showPageById( window.location.hash );
+  } else {
+    if ($('#wrapper').hasClass('sb-active')) {
+      $('#wrapper').removeClass('sb-active');
+    }
   }
 };
 
@@ -40,10 +44,10 @@ showPageById = function (targetPageId){
     sourceNode.removeClass('showing-page');
   }
   targetNode.addClass('showing-page');
+  window.scrollTo(0, 0)
   showingPageId = targetPageId;
   //For sidebar on small screen
   if ($('#wrapper').hasClass('sb-active')) {
     $('#wrapper').removeClass('sb-active');
-    console.log('??');
   }
 };
