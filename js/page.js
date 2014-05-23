@@ -17,8 +17,6 @@ $(window).load( function () {
     jThis = $(this);
     jThis.width(4 + jThis.children('img').width() + jThis.children('.string').width() );
   });
-
-  new ScrollIWant('.page .content', false, true);
 });
 
 checkUrlHash = function() {

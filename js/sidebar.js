@@ -34,7 +34,6 @@ $(window).load( function () {
     this.innerHTML = '<img src="icons/dot.png"><p class="string">'+jThis.attr('string')+'</p>';
     jThis.on('tap', tapToShowPage);
   })
-  new ScrollIWant('.groups', false, true);
   $('.sb-sidebar .group-title').each(function(index) {
     jThis = $(this);
     jThisP = $(this.parentElement);
