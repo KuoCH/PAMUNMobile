@@ -1,6 +1,7 @@
 //Only implement y-direction for now
 
 var ScrollIWant = function(eSel, x, y) {
+  return;
   // Variables to track inputs
   var originY = originX = 0;
   var originScrollTop = originScrollLeft = 0;

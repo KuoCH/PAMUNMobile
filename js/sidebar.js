@@ -1,5 +1,5 @@
 $(window).load( function () {
-  $(document).bind('touchmove', function(e) { e.preventDefault();});
+  //$(document).on('touchmove', function(e) { e.preventDefault();});
   $('.sb-content').on('tap', function(e) {
     if ($('#wrapper').hasClass('sb-active')) {
       e.preventDefault();
@@ -39,23 +39,30 @@ $(window).load( function () {
     jThis = $(this);
     jThisP = $(this.parentElement);
     jThis.on('tap', function(e) {
-      $(this.parentElement).toggleClass('group-active');
+      jThis = $(this.parentElement);
+      jThis.toggleClass('group-active');
+      setTimeout( function() {
+        jThis[0].scrollIntoViewIfNeeded(false);
+      }, 300);
+      e.preventDefault();
       return false;
     });
   });
   new OnPress('.sb-sidebar .group-title');
   $('.sb-sidebar .groups-wrapper').on('tap', function(e) {
-    $('#wrapper').removeClass('sb-active');
+      $('#wrapper').toggleClass('sb-active');
+    e.preventDefault();
     return false;
   });
   new OnPress('.sb-sidebar .group-item');
 
   new OnPress('.menu-toggle');
 
-  window.scrollTo(0,1);
+  //window.scrollTo(0,1);
 });
 
 tapToShowPage = function(e) {
   $('#wrapper').removeClass('sb-active');
   window.location.hash = $(this).attr('pageId');
+  e.preventDefault();
 };
