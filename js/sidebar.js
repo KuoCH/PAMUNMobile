@@ -24,16 +24,13 @@ $(window).load( function () {
   $('.sb-sidebar .homepage').on('tap', tapToShowPage);
   new OnPress('.sb-sidebar .homepage');
   new OnPress('.hide-sidebar');
-
+/*
   $('.sb-sidebar .group').each(function(index){
     jThis = $(this)
     this.innerHTML = '<div class="group-title"><img class="icon" src="'+jThis.attr('icon')+'"><p class="string">'+jThis.attr('string')+'</p><img class="arrowdown" src="icons/arrowdown.png"><div class="rightbar"></div></div>' + this.innerHTML;
   })
-  $('.sb-sidebar .group-item').each(function(index){
-    jThis = $(this);
-    this.innerHTML = '<img src="icons/dot.png"><p class="string">'+jThis.attr('string')+'</p>';
-    jThis.on('tap', tapToShowPage);
-  })
+  */
+  $('.sb-sidebar .group-item').on('tap', tapToShowPage);
   $('.sb-sidebar .group-title').each(function(index) {
     jThis = $(this);
     jThisP = $(this.parentElement);

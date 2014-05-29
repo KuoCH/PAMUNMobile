@@ -9,10 +9,11 @@ $(window).load( function () {
   $(window).on('hashchange', checkUrlHash);
   checkUrlHash();
 
+  /*
   $('.page .header').each(function(i) {
     this.innerHTML='<div class="header-wrapper"><img src="' + $(this).attr('icon') + '"><div class="string">'+this.innerHTML+'</div></div>';
   });
-
+*/
   $('.page .header .header-wrapper').each(function(i) {
     jThis = $(this);
     jThis.width(4 + jThis.children('img').width() + jThis.children('.string').width() );
