@@ -33,6 +33,8 @@
   font-size: unit(`scale(13)`,px);
   font-family: futura_oblique;
   z-index: -100;
+  display: table;
+  text-align: center;
 }
 
 .page.showing-page .header{
@@ -40,21 +42,25 @@
 }
 
 .page .header>.header-wrapper {
-  .both-center;
+  //.both-center;
   height: unit(`scale(16)`,px);
+  display: table-cell;
+  vertical-align: middle;
 }
+
 .page .header>.header-wrapper>img {
-  .vertical-center;
+  //.vertical-center;
   left: unit(`scale(3)`,px);
   width: unit(`scale(16)`,px);
-  display: block;
+  display: inline-block;
 }
 
 .page .header>.header-wrapper>.string {
-  .vertical-center;
+  //.vertical-center;
   white-space:nowrap;
   left: unit(`scale(23)`,px);
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
   /*
   right: 0px;
   text-align:center;
