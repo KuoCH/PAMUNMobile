@@ -1,5 +1,3 @@
-@import "util.less";
-
 .page {
   position: relative;
   top: 0;
@@ -18,7 +16,11 @@
   */
 
 .page .header {
-  .disable-select;
+    -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
+
   width: 100%;
   position: fixed;
   top: 0px;
@@ -64,7 +66,11 @@
   letter-spacing: unit(`scale(0.35)`, px);
   height: unit(`scale(14)`, px);
   width: 100%;
-  .transform(0.9873, 1.0);
+  -webkit-transform:scale(0.9873, 1.0);
+  -moz-transform:scale(0.9873, 1.0);
+  -ms-transform:scale(0.9873, 1.0);
+  -o-transform:scale(0.9873, 1.0);
+  transform:scale(0.9873, 1.0);
   margin-bottom: unit(`scale(3)`, px);
 }
 #page-home .header>.header-wrapper>.string>.small {
@@ -73,7 +79,11 @@
   width: 100%;
   text-align:center;
   line-height: unit(`scale(6)`, px);
-  .transform(1.36, 1.0);
+  -webkit-transform:scale(1.36, 1.0);
+  -moz-transform:scale(1.36, 1.0);
+  -ms-transform:scale(1.36, 1.0);
+  -o-transform:scale(1.36, 1.0);
+  transform:scale(1.36, 1.0);
 }
 
 .page .content {

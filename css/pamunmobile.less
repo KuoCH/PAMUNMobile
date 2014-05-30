@@ -1,5 +1,3 @@
-@import "util.less";
-
 .page .header {
   background: #4575AA;
   color:white;
@@ -72,13 +70,23 @@ h4 {
 }
 
 #page-home .hotkey img {
-  .vertical-center;
+    position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
   left: unit(`scale(35.5)`, px);
   width: unit(`scale(25)`, px);
 }
 
 #page-home .hotkey .label {
-  .vertical-center;
+    position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
   left: unit(`scale(63.5)`, px);
   font-size: unit(`scale(12)`, px);
   font-family: futura_oblique;

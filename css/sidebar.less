@@ -1,5 +1,3 @@
-@import "util.less";
-
 .sb-content {
   height: 100%;
   width: 100%;
@@ -10,7 +8,11 @@
 }
 
 .sb-sidebar {
-  .disable-select;
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
+
   left: unit(`scale(-163)`,px);
   width: unit(`scale(163)`, px);
   height: 100%;
@@ -32,7 +34,11 @@
   transition: all 0.3s ease 0s;
 }
 .menu-toggle {
-  .disable-select;
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
+
   left: unit(`scale(2)`,px);
   top: unit(`scale(6)`,px);
   height: unit(`scale(23)`,px);
@@ -42,7 +48,11 @@
 }
 
 .menu-toggle img {
-  .disable-select;
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
+
   left: 0;
   top: 0;
   height: unit(`scale(23)`,px);
@@ -82,7 +92,12 @@
 }
 
 .sb-sidebar .homepage>* {
-  .vertical-center;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
 }
 
 .sb-sidebar .homepage>img {
@@ -158,19 +173,34 @@
 }
 
 .sb-sidebar .group-title .icon {
-  .vertical-center;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
   width: unit(`scale(15)`,px);
   left: unit(`scale(11)`,px);
 }
 
 .sb-sidebar .group-title .string {
-  .vertical-center;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
   left: unit(`scale(37)`,px);
   font-size: unit(`scale(12)`, px);
 }
 
 .sb-sidebar .group-title .arrowdown {
-  .vertical-center;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
   width: unit(`scale(6.5)`,px);
   right: unit(`scale(10)`,px);
 }
@@ -180,7 +210,12 @@
 }
 
 .sb-sidebar .group-title .rightbar {
-  .vertical-center;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
   width: unit(`scale(2.5)`,px);
   height: unit(`scale(33)`,px);
   right: 0;
@@ -222,13 +257,23 @@
 }
 
 .sb-sidebar .group-item img {
-  .vertical-center;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
   width: unit(`scale(8)`,px);
   left: unit(`scale(26)`,px);
 }
 
 .sb-sidebar .group-item .string {
-  .vertical-center;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
   left: unit(`scale(45)`,px);
   font-size: unit(`scale(10)`, px);
   color: #000000;
