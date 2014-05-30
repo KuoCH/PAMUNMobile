@@ -6,21 +6,18 @@
   left: 0;
   width: 100%;
   height: 100%;
-  /*
   display: none;
+  /*
   z-index: -100;
   */
 }
 
-  /*
 .page.showing-page {
-  position: relative;
-  top: 0;
-  left: 0;
   display: inline-block;
+  /*
   z-index: 0;
-}
   */
+}
 
 .page .header {
   .disable-select;
@@ -28,11 +25,13 @@
   position: fixed;
   top: 0px;
   margin: 0;
-  height: unit(`scale(35)`,px);
-  line-height: unit(`scale(16)`,px);
-  font-size: unit(`scale(13)`,px);
+  height: 19.444444vw;
+  line-height: 8.888889vw;
+  font-size: 7.222222vw;
   font-family: futura_oblique;
+  /*
   z-index: -100;
+  */
   display: table;
   text-align: center;
 }
@@ -43,24 +42,26 @@
 
 .page .header>.header-wrapper {
   //.both-center;
-  height: unit(`scale(16)`,px);
+  height: 8.888889vw;
   display: table-cell;
   vertical-align: middle;
 }
 
 .page .header>.header-wrapper>img {
   //.vertical-center;
-  left: unit(`scale(3)`,px);
-  width: unit(`scale(16)`,px);
+  //left: 1.666667vw;
+  margin-left: 3vw;
+  width: 8.888889vw;
   display: inline-block;
 }
 
 .page .header>.header-wrapper>.string {
   //.vertical-center;
   white-space:nowrap;
-  left: unit(`scale(23)`,px);
+  //left: 12.777778vw;
   display: inline-block;
   vertical-align: middle;
+  margin-left: 1vw;
   /*
   right: 0px;
   text-align:center;
@@ -68,27 +69,27 @@
 }
 
 #page-home .header>.header-wrapper>.string>.big {
-  font-size: unit(`scale(14)`,px);
-  line-height: unit(`scale(14)`, px);
-  letter-spacing: unit(`scale(0.35)`, px);
-  height: unit(`scale(14)`, px);
+  font-size: 7.777778vw;
+  line-height: 7.777778vw;
+  letter-spacing: 0.194444vw;
+  height: 7.777778vw;
   width: 100%;
   .transform(0.9873, 1.0);
-  margin-bottom: unit(`scale(3)`, px);
+  margin-bottom: 1.666667vw;
 }
 #page-home .header>.header-wrapper>.string>.small {
-  font-size: unit(`scale(7)`,px);
-  height: unit(`scale(6)`, px);
+  font-size: 3.888889vw;
+  height: 3.333333vw;
   width: 100%;
   text-align:center;
-  line-height: unit(`scale(6)`, px);
+  line-height: 3.333333vw;
   .transform(1.36, 1.0);
 }
 
 .page .content {
   width: 100%;
   position: relative;
-  top: unit(`scale(35)`,px);
+  top: 19.444444vw;
   bottom: 0px;
   display: none;
   /*
