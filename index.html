@@ -1,6 +1,11 @@
 <!DOCTYPE html> 
 <html>
   <head>
+  <script type="text/javascript">
+    if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+      //window.location="http://www.panasiamun.com/2014_Beta/";
+    }
+  </script>
     <title>PAMUN 2014</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"><!--, minimal-ui"> -->
@@ -74,7 +79,7 @@
               <div class="group-item" pageId="page-delegate-registration"><img src="icons/dot.png"><p class="string">Delegate Registration</p></div>
               <div class="group-item" pageId="page-school-registration"><img src="icons/dot.png"><p class="string">School Registration</p></div>
               <div class="group-item" pageId="page-payment-information"><img src="icons/dot.png"><p class="string">Payment Information</p></div>
-              <div class="group-item" pageId="page-hotel-information"><img src="icons/dot.png"><p class="string">Hotel Information</p></div>
+              <div class="group-item" pageId="page-hotel-information"><img src="icons/dot.png"><p class="string">Accommodation</p></div>
             </div>
             <div class="group"><div class="group-title"><img class="icon" src="icons/preparation/preparation.png"><p class="string">Preparation</p><img class="arrowdown" src="icons/arrowdown.png"><div class="rightbar"></div></div>
               <div class="group-item" pageId="page-rules-of-procedure"><img src="icons/dot.png"><p class="string">Rules of Procedure</p></div>
@@ -107,11 +112,11 @@
             </div>
           </div>
           <div class="content">
-            <div class="hotkey" pageId="page-conference-overview"><img src="icons/hotkeys/hotkey_conference_overview.png"><div class="label">Conference</div></div>
-            <div class="hotkey" pageId="page-registration-overview"><img src="icons/hotkeys/hotkey_registration_overview.png"><div class="label">Registration</div></div>
-            <div class="hotkey" pageId="page-letter-from-academics"><img src="icons/committees/committees.png"><div class="label">Committees</div></div>
-            <div class="hotkey" pageId="page-social-events"><img src="icons/hotkeys/hotkey_social_events.png"><div class="label">Social Events</div></div>
-            <div class="hotkey" pageId="page-visit-us"><img src="icons/contact/contact_us.png"><div class="label">Contact Us</div></div>
+            <div class="hotkey horizontal-center-table" pageId="page-conference-overview"><div class="horizontal-center-cell"><div class="vertical-center-table"><div class="vertical-center-cell"><img src="icons/hotkeys/hotkey_conference_overview.png"></div></div><div class="vertical-center-table"><div class="vertical-center-cell"><div class="title">Conference</div></div></div></div></div>
+            <div class="hotkey horizontal-center-table" pageId="page-registration-overview"><div class="horizontal-center-cell"><div class="vertical-center-table"><div class="vertical-center-cell"><img src="icons/hotkeys/hotkey_registration_overview.png"></div></div><div class="vertical-center-table"><div class="vertical-center-cell"><div class="title">Registration</div></div></div></div></div>
+            <div class="hotkey horizontal-center-table" pageId="page-letter-from-academics"><div class="horizontal-center-cell"><div class="vertical-center-table"><div class="vertical-center-cell"><img src="icons/committees/committees.png"></div></div><div class="vertical-center-table"><div class="vertical-center-cell"><div class="title">Committees</div></div></div></div></div>
+            <div class="hotkey horizontal-center-table" pageId="page-social-events"><div class="horizontal-center-cell"><div class="vertical-center-table"><div class="vertical-center-cell"><img src="icons/hotkeys/hotkey_social_events.png"></div></div><div class="vertical-center-table"><div class="vertical-center-cell"><div class="title">Social Events</div></div></div></div></div>
+            <div class="hotkey horizontal-center-table" pageId="page-visit-us"><div class="horizontal-center-cell"><div class="vertical-center-table"><div class="vertical-center-cell"><img src="icons/contact/contact_us.png"></div></div><div class="vertical-center-table"><div class="vertical-center-cell"><div class="title">Contact Us</div></div></div></div></div>
           </div>
         </div>
 
@@ -131,7 +136,7 @@
             <br>
             After serving as one of the Under Secretary Generals of Academics for PAMUN 2013, I am humbled and honored to be returning as the Secretary General for this year’s conference. I hope you will join me at Pan Asia Model United Nations 2014, as it is sure to be an unforgettable journey of profound debate, self-discovery, and lasting friendships. <br>
             <br>
-            If there are any additional questions, comments, or concerns, please visit our <a onclick="window.location.hash = '#page-visit-us';">Visit Us</a> or <a onclick="window.location.hash = '#page-mail-us';">Mail Us</a> page for the relevant contact information, or feel free to contact me personally at <a href="mailto:joyce.lee@panasiamun.com">joyce.lee@panasiamun.com</a>. <br>
+            If there are any additional questions, comments, or concerns, please visit our <a onclick="window.location.hash = 'page-visit-us';">Visit Us</a> or <a onclick="window.location.hash = 'page-mail-us';">Mail Us</a> page for the relevant contact information, or feel free to contact me personally at <a href="mailto:joyce.lee@panasiamun.com">joyce.lee@panasiamun.com</a>. <br>
             <br>
             We look forward to seeing you in December in Taipei!<br>
             <br>
@@ -230,8 +235,29 @@
               <img src="icons/about/sponsors.png"><div class="string">Sponsors</div>
             </div>
           </div>
-          <div class="content">
-            Here is content
+          <div class="content pure-article">
+            <p>Below are the sponsors for our 2013 conference. Sponsors for this year’s conference will be available soon! </p>				
+            <p>If you would like to support Pan Asia Model United Nations 2014 as a sponsor, please contact our Public Relations team at <a href="mailto:public.relations@panasiamun.com" style="color:#0F4D92">public.relations@panasiamun.com</a>.</p>
+            <br>
+            <div id="sponsor-wrapper" class="sponsors" style="padding-bottom:20px;">	
+              <img src="icons/about/sponsor/fubon_logo.png"  />
+            </div>
+
+            <div id="sponsor-wrapper" class="sponsors">	
+              <img src="icons/about/sponsor/bestdelegate_logo.jpg"  />
+            </div>
+
+            <div id="sponsor-wrapper" class="sponsors">	
+              <img src="icons/about/sponsor/canamke_logo.jpg"  />
+            </div>
+
+            <div id="sponsor-wrapper" class="sponsors">	
+              <img src="icons/about/sponsor/cezanne_logo.jpg"  />
+            </div>
+
+            <div id="sponsor-wrapper">	
+              <img src="icons/about/sponsor/baihsin_logo.jpg"  />
+            </div>    
           </div>
         </div>
 
@@ -265,7 +291,7 @@
               </tr>
             </table>
             <br>
-            <p>Please see the <a href="../registration/index.html" style="color:#0F4D92">Registration</a> pages for more information on how to register for Pan Asia MUN 2014.</p>
+            <p>Please see the <a onclick="window.location.hash = 'page-registration-overview';">Registration</a> pages for more information on how to register for Pan Asia MUN 2014.</p>
 
             <h4 style="color:#3071a9">Committees and Topics</h4>
             <p><span style="color:#666666"><strong>ASEAN Regional Forum (ARF)</strong></span><br>
@@ -289,7 +315,7 @@
             議題壹：深化區域安全合作<br>
             議題貳：能源安全合作</p>
 
-            <p>Please see our <a onclick="window.location.hash = '#page-letter-from-academics';">Committees</a> section for more detailed introductions to each committee.</p>
+            <p>Please see our <a onclick="window.location.hash = 'page-letter-from-academics';">Committees</a> section for more detailed introductions to each committee.</p>
           </div>
         </div>
 
@@ -299,87 +325,35 @@
               <img src="icons/conference/schedule.png"><div class="string">Schedule</div>
             </div>
           </div>
-          <div class="content pure-article">
-            <table width="250">
-              <tr style="line-height:25px">
-                <td style="color:#3071a9"><strong>Thursday, December 04, 2014</strong></td>
-              </tr>
-              <tr style="line-height:25px">
-                <td>Registration</td>
-              </tr>
-              <tr style="line-height:25px">
-                <td>Rules of Procedure Review</td>
-              </tr>
-              <tr style="line-height:25px">
-                <td>Opening Ceremonies</td>
-              </tr>
-              <tr style="line-height:25px">
-                <td>Lunch</td>
-              </tr>
-              <tr style="line-height:25px">
-                <td>Committee Session 1</td>
-              </tr>
-              <tr style="line-height:25px">
-                <td>Social Event: Dinner Banquet</td>
-              </tr>
-            </table>
-            <br>
-
-            <table width="250">
-              <tr style="line-height:25px">
-                <td style="color:#3071a9"><strong>Friday, December 05, 2014</strong></td>
-              </tr>
-              <tr style="line-height:25px"> 
-                <td>Committee Session 2</td>
-              </tr>
-              <tr style="line-height:25px">
-                <td>Lunch</td>
-              </tr>
-              <tr style="line-height:25px">
-                <td>Committee Session 3</td>
-              </tr>
-              <tr style="line-height:25px">
-                <td>Social Event</td>
-              </tr>
-            </table>
-            <br>
-
-            <table width="250">
-              <tr style="line-height:25px">
-                <td style="color:#3071a9"><strong>Saturday, December 06, 2014</strong></td>
-              </tr>
-              <tr style="line-height:25px">
-                <td>Committee Session 4</td>
-              </tr>
-              <tr style="line-height:25px">
-                <td>Lunch</td>
-              </tr>
-              <tr style="line-height:25px">
-                <td>Committee Session 5</td>
-              </tr>
-              <tr style="line-height:25px">
-                <td>Social Event: Committee Dinner</td>
-              </tr>
-            </table>
-            <br>
-
-            <table width="250">
-              <tr style="line-height:25px">
-                <td style="color:#3071a9"><strong>Sunday, December 07, 2014</strong></td>
-              </tr>
-              <tr style="line-height:25px">
-                <td>Committee Session 6</td>
-              </tr>
-              <tr style="line-height:25px">
-                <td>Lunch</td>
-              </tr>
-              <tr style="line-height:25px">
-                <td>Closing Ceremonies</td>
-              </tr>
-              <tr style="line-height:25px">
-                <td>Social Event: Night Club</td>
-              </tr>
-            </table>
+          <div class="content">
+            <div class="horizontal-center-table">
+              <div class="horizontal-center-cell">
+                <div class="wrapper">
+                  <div class="schedule-date">Thursday, December 04, 2014</div>
+                  <div class="schedule-detail">- Registration</div>
+                  <div class="schedule-detail">- Rules of Procedure Review</div>
+                  <div class="schedule-detail">- Opening Ceremonies</div>
+                  <div class="schedule-detail">- Lunch</div>
+                  <div class="schedule-detail">- Committee Session 1</div>
+                  <div class="schedule-detail">- Social Event: Dinner Banquet</div>
+                  <div class="schedule-date">Friday, December 05, 2014</div>
+                  <div class="schedule-detail">- Committee Session 2</div>
+                  <div class="schedule-detail">- Lunch</div>
+                  <div class="schedule-detail">- Committee Session 3</div>
+                  <div class="schedule-detail">- Social Event</div>
+                  <div class="schedule-date">Saturday, December 06, 2014</div>
+                  <div class="schedule-detail">- Committee Session 4</div>
+                  <div class="schedule-detail">- Lunch</div>
+                  <div class="schedule-detail">- Committee Session 5</div>
+                  <div class="schedule-detail">- Social Event: Committee Dinner</div>
+                  <div class="schedule-date">Sunday, December 07, 2014</div>
+                  <div class="schedule-detail">- Committee Session 6</div>
+                  <div class="schedule-detail">- Lunch</div>
+                  <div class="schedule-detail">- Closing Ceremonies</div>
+                  <div class="schedule-detail">- Social Event: Night Club</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -418,8 +392,47 @@
               <img src="icons/conference/conference_policies.png"><div class="string">Conference Policies</div>
             </div>
           </div>
-          <div class="content">
-            Here is content
+          <div class="content pure-article">
+            <p>Every delegate must agree to adhere to the Pan Asia Model United Nations 2014 Conference Policies in order to register for and attend the conference. Your agreeance with the conference policy on the registration form indicates that you have read and will abide by all policies detailed below. Delegates are also expected to abide by all local laws during the conference. Pan Asia MUN reserves the right to involve any relevant legal entities necessary in the enforcement of conference policies and may remove a delegate from the conference for misconduct at any time without refund at the discretion of the Secretary General.
+            <br>
+            Please report any known or potential infringement of conference policies to the Secretariat or your committee Dais.</p>
+            <h4>General Policy</h4>
+            <p>The Secretary General is the only staff member empowered to grant exceptions to any conference policies or other Pan Asia MUN regulations. Pan Asia MUN is not liable for any statements made by other staff members regarding exceptions to fees or policies. </p>
+
+            <h4>Payment and Refund Policy</h4>
+            <p>Delegates are required to pay the registration fee in full within 5 days of completing the registration form. The deadline for refunds is September 10, 2014. Please note that delegates will be responsible for any transaction and handling fees associated with the refund. After September 10, 2014, all fees will be non-refundable unless proof of an extenuating circumstance is provided (e.g. illness, serious family emergency etc.) Any delegate who wishes to cancel their registration should email the Secretary General, Joyce Lee, with the request and proof, if required.</p>
+
+            <h4>Venues</h4>
+            <p>Food and drink are not permitted in any of our opening ceremony, committee session, and closing ceremony venues. Pan Asia MUN is not responsible for any structural damages and extra fees incurred at any of our venues.</p>
+
+            <h4>Committee Session Policy</h4>
+            <p>Delegates are expected to be in their respective committee rooms during committee sessions. Delegates who do not attend all six sessions will not receive their Certificate of Participation unless the absence has been approved by the Secretary General and their Chair ahead of time. Please email the Secretary General before November 25, 2014 with your request for absence, reason, and proof.</p>
+
+            <h4>Dress Code</h4>
+            <p>All delegate must be appropriately dressed in Western business attire. For men, a suit jacket, dress shirt, dress pants, and tie is required. For women, a suit jacket, dress shirt, and pants or skirt of appropriate length is required. Jeans, running shoes, open-toed footwear, and short skirts will not be permitted. All delegate are required to wear their own conference-issued name badges during all conference activities.</p>
+
+            <h4>Intellectual Property</h4>
+            <p>All materials from any Pan Asia MUN platforms, including website content, Rules of Procedures, and Background Guides, are the intellectual property of Pan Asia MUN. Usage of such content without the permission of Pan Asia MUN is a violation of intellectual property rights. Pan Asia MUN reserves the right to take legal action if such infringement occurs. In addition, conference content including but not limited to position papers, working papers, draft resolutions, and amendments submitted before and during the conference are considered the intellectual property of Pan Asia MUN.</p>
+
+            <h4>Miscellaneous Fees</h4>
+            <p>Replacement badges and placards, and replacements for lost or misplaced conference handbooks and materials may be purchased at the conference services desk for a fee. Pan Asia MUN will provide Certificates of Participation available to all delegates free of charge.</p>
+
+            <h4>Alcohol and Drug Policy</h4>
+            <p>Only those delegates age 18 or older may consume alcohol in Taipei. Open containers of alcohol may not be carried in public areas, including committee rooms and hallways. Delegates found possessing or using illicit drugs, as defined by local law, will be required to leave immediately and may be held criminally liable.</p>
+
+            <h4>Smoking Policy</h4>
+            <p>The City of Taipei prohibits smoking indoors in public spaces. Delegates will not be permitted to smoke inside the conference center or at social event venues.</p>
+
+            <h4>Valuables</h4>
+            <p>Delegates will be fully responsible for any personal valuables. Pan Asia MUN is not responsible for belongings left in any venues or any form of transportation.</p>
+
+            <h4>Suspension Policy</h4>
+            <p>Pan Asia MUN will enforce safety and security measures that are under the legal framework of local law to ensure the safest surroundings for participating delegates. Delegates that violate these security measures or local law may be suspended from the conference. Violation of our policies may result in removal from the conference. Any further penalties will be under the discretion of the Pan Asia MUN Secretariat.</p>
+
+            <h4>Other Rules</h4>
+            <p>The Pan Asia MUN Secretariat reserves the right to expel delegates from the conference due to unacceptable behavior. The Secretariat reserves the right to define appropriate conference behavior and is particularly sensitive to issues involving displays of disrespect to other delegates, conference staff, and the conference center. Pan Asia MUN does not tolerate discrimination based on race, color, religion, creed, national or ethnic origin, sex, sexual orientation, age or disability.<br>
+            The goal of the Secretariat of Pan Asia MUN 2014 is to provide you with the best possible conference experience. Do not hesitate to contact with us with any questions or comments at <a href="mailto:delegate.affairs@panasiamun.com" style="color:#0F4D92">delegate.affairs@panasiamun.com</a>.<br>
+            By pressing yes to the conference policy on the registration form, you are confirming that you have read the Pan Asia MUN 2014 Conference Policies and accept these conditions.</p>
           </div>
         </div>
 
@@ -452,13 +465,13 @@
             Eating and drinking are not allowed in the conference venue at any time. Only water is allowed inside the conference venue.</p>
 
             <p><strong>Are meals and accommodations included?</strong><br>
-            Meals are not included in the registration except for dinner on the first night of social events. You are encouraged to explore local restaurants during the daily lunch break. Accommodations are not included in the registration fee, but PAMUN 2014 offers a hotel booking service with which you may book rooms at one of our partner hotels at a discounted price. Please check the <a href="../registration/hotInfo.html" style="color:#0F4D92">Hotel Information</a> page for more info.</p>
+            Meals are not included in the registration except for dinner on the first night of social events. You are encouraged to explore local restaurants during the daily lunch break. Accommodations are not included in the registration fee, but PAMUN 2014 offers a hotel booking service with which you may book rooms at one of our partner hotels at a discounted price. Please check the <a onclick="window.location.hash = 'page-hotel-information';">Hotel Information</a> page for more info.</p>
 
             <p><strong>Are laptops allowed in the committee rooms?</strong><br>
             Laptops and other electronic devices may not be used during moderated sessions. Delegates who wish to work on documents during sessions will be asked to work outside of committee rooms. However, laptops and other electronic devices may be used inside the committee room during unmoderated sessions.</p>
 
             <p><strong>How should I prepare for the conference?</strong><br>
-            At the bare minimum, you should familiarize yourself with the PAMUN 2014 <a href="../preparation/rop.html" style="color:#0F4D92">Rules of Procedure</a>, both topics in your committee’s background guide. Any MUN background guide, however, is only meant to be a start to your research. A strong delegate will also do their own research through both print and online resources. This should include past actions the UN and/or your country has taken on an issue, which you can use as an inspiration for your solution. Delegates are also reminded that as a representative of a country, you are expected to take your country’s stance on the topic. While this may differ from your personal opinion, this is something faced by all political representatives.<br>
+            At the bare minimum, you should familiarize yourself with the PAMUN 2014 <a onclick="window.location.hash = 'page-rules-of-procedure';">Rules of Procedure</a>, both topics in your committee’s background guide. Any MUN background guide, however, is only meant to be a start to your research. A strong delegate will also do their own research through both print and online resources. This should include past actions the UN and/or your country has taken on an issue, which you can use as an inspiration for your solution. Delegates are also reminded that as a representative of a country, you are expected to take your country’s stance on the topic. While this may differ from your personal opinion, this is something faced by all political representatives.<br>
             Pan Asia MUN strictly prohibits the use of pre-drafted working papers and draft resolutions. The spirit of Model UN is cooperation and participatory democracy. Preemptively drafting a document using only your ideas is against this spirit.</p>
 
             <p><strong>What is the difference between single and double delegations?</strong><br>
@@ -466,7 +479,7 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Committees with only double delegations</em>: ARF, UNESCO, UNSC, 中文委員會<br>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Committees with only single delegations</em>: USNSC<br>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Committees with both single and double delegations</em>: DISEC, UNODC<br>
-            Please see our <a href="../registration/delReg.html" style="color:#0F4D92">Delegate Registration</a> page for more information.</p>
+            Please see our <a onclick="window.location.hash = 'page-delegate-registration';">Delegate Registration</a> page for more information.</p>
 
             <p><strong>What is a school delegation?</strong><br>
             School Delegations are only available for delegates who are studying at a post-secondary institution outside of Taiwan. This is meant to facilitate important conference communications with overseas delegates who may attend the same school or be members of the same club. Instead of communicating with each delegate individually, important information will be forwarded to the school delegation’s head delegate. There is no advantage or disadvantage to registering as part of a school delegation, and it will have no impact on your country assignments or committee experience.</p>
@@ -568,7 +581,7 @@
           <div class="header pure-article" icon="icons/committees/committee_un.png">
             UNSC
           </div>
-          <div class="content">
+          <div class="content pure-article">
             <p>The United Nations Security Council (UNSC) is one of the six principal organs of United Nations. The Security Council is charged with the maintenance of international peace and security. Composed of five permanent members and ten rotating members, the UNSC can establish peacekeeping operations, sanctions, and authorize military actions. </p><br>
 
             <h4>Topic I: Situation in Northern Mali</h4>
@@ -643,13 +656,13 @@
             </div>
           </div>
           <div class="content pure-article">
-            <p>Every delegate, whether part of a school delegation or a double delegation, is required to fill out every section on the the PAMUN 2014 Registration Form. There are several sections on the registration form, including school delegation information, personal information, emergency contact, committee preferences, and double delegation information. Delegates will be provided with the payment page after all required sections have been completed and submitted and registration is not considered complete until all required fees have been received. Please see the <a href="payInfo.html" style="color:#0F4D92">Payment page</a> for more information regarding fees and payment options.</p>
+            <p>Every delegate, whether part of a school delegation or a double delegation, is required to fill out every section on the the PAMUN 2014 Registration Form. There are several sections on the registration form, including school delegation information, personal information, emergency contact, committee preferences, and double delegation information. Delegates will be provided with the payment page after all required sections have been completed and submitted and registration is not considered complete until all required fees have been received. Please see the <a onclick="window.location.hash = 'page-payment-information';">Payment page</a> for more information regarding fees and payment options.</p>
 
             <h4>Double Delegations</h4>
             A double delegation consists of two delegates who represent the same country in the same committee. All delegates wishing to be part of a double delegation must find their double delegation partner before registering for the conference.  Delegates who wish to be part of a double delegation but do not fill out a partner name in the registration form will be considered a single delegation.</p>
 
             <h4>School Registration</h4>
-            If you are an overseas student who would like to register as part of a school delegation, please check the <a href="schReg.html" style="color:#0F4D92">School Delegation</a> page for more information. Please note that registration as part of a school delegation is only available to overseas students.</p>
+            If you are an overseas student who would like to register as part of a school delegation, please check the <a onclick="window.location.hash = 'page-school-registration';">School Delegation</a> page for more information. Please note that registration as part of a school delegation is only available to overseas students.</p>
 
             <h4>Single and Double Delegations Committees</h4>
             Pan Asia MUN 2014 has a total of seven committees. Please take special note of the committees that only accept single or double delegations.</p>
@@ -692,7 +705,7 @@
           <div class="content pure-article">
             <p>This year, overseas students may register as part of a school delegation. This is meant to facilitate important conference communications with overseas delegates who may attend the same school or be members of the same MUN club. Instead of communicating with each delegate individually, important information will be forwarded to that school delegation’s head delegate. There is no advantage or disadvantage to registering as part of a school delegation, and it will have no impact on your country assignments or committee sessions.</p>
 
-            <p>School Delegations are only available for delegates who are studying at a post-secondary institution <strong>outside</strong> of Taiwan. Any delegates studying in Taiwan, whether full-time or on exchange may not register as part of a school delegation. If you are the only overseas delegate coming from your school, you should register as an individual delegate. Please see the <a href="delReg.html" style="color:#0F4D92">Delegate Registration</a> page for more information. If there are additional questions regarding hotel booking, visa applications, and pre-conference planning, feel free to contact the Delegate Affairs Team at <a href="mailto:delegate.affairs@panasiamun.com" style="color:#0F4D92">delegate.affairs@panasiamun.com</a>.</p>
+            <p>School Delegations are only available for delegates who are studying at a post-secondary institution <strong>outside</strong> of Taiwan. Any delegates studying in Taiwan, whether full-time or on exchange may not register as part of a school delegation. If you are the only overseas delegate coming from your school, you should register as an individual delegate. Please see the <a onclick="window.location.hash = 'page-delegate-registration';">Delegate Registration</a> page for more information. If there are additional questions regarding hotel booking, visa applications, and pre-conference planning, feel free to contact the Delegate Affairs Team at <a href="mailto:delegate.affairs@panasiamun.com" style="color:#0F4D92">delegate.affairs@panasiamun.com</a>.</p>
 
             <h4>Head Delegate</h4>
             <p>Every school delegation must designate one of their delegates as their head delegate. All conference information will be delivered to the head delegate, and he or she is responsible for communicating this information to the other delegates and coordinating their group’s trip planning. During the registration process, head delegates are also required to complete an additional form to register their school delegation. Please do not complete this form until all the delegates from your school delegation have individually registered first. Required information on this form includes: total number of delegates and names of all the delegates in the school delegation. </p>
@@ -730,10 +743,10 @@
             <p>請於填寫報名表後五天內完成付款，未付款者將由系統自動取消報名資格。</p>
 
             <h4>Hotel Booking Services</h4>
-            <p>After completing the registration process and payment, those who require hotel accommodations will be directed to our Hotel Booking Service page.  Delegates may book at a discounted price with one of our partner hotels, and PAMUN will handle the reservation and payment process for you. More information about pricing and hotel options will be released soon. Please check the <a href="hotInfo.html" style="color:#0F4D92">Hotel Information</a> page to stay up to date.</p>
+            <p>After completing the registration process and payment, those who require hotel accommodations will be directed to our Hotel Booking Service page.  Delegates may book at a discounted price with one of our partner hotels, and PAMUN will handle the reservation and payment process for you. More information about pricing and hotel options will be released soon. Please check the <a onclick="window.location.hash = 'page-hotel-information';">Hotel Information</a> page to stay up to date.</p>
 
             <h4>Refunds</h4>
-            <p>Please see our <a href="../conference/policies.html" style="color:#0F4D92">Conference Policies</a> for more details regarding our refund policy.</p>
+            <p>Please see our <a onclick="window.location.hash = 'page-conference-policies';">Conference Policies</a> for more details regarding our refund policy.</p>
             
           </div>
         </div>
@@ -741,7 +754,7 @@
         <div id="page-hotel-information" class="page">
           <div class="header">
             <div class="header-wrapper">
-              <img src="icons/registration/hotel_information.png"><div class="string">Hotel Information</div>
+              <img src="icons/registration/hotel_information.png"><div class="string">Accommodation</div>
             </div>
           </div>
           <div class="content pure-article">
@@ -756,7 +769,7 @@
             </div>
           </div>
           <div class="content">
-            Here is content
+            <img src="icons/website_under_construction.png" style="width: 100%;">
           </div>
         </div>
         -->
@@ -768,7 +781,8 @@
             </div>
           </div>
           <div class="content">
-            Here is content
+            <img src="icons/website_under_construction.png" style="width: 100%;">
+            <h4>The Rules of Procedure for Pan Asia MUN 2014 will be available soon!</h4>
           </div>
         </div>
 
@@ -779,7 +793,7 @@
             </div>
           </div>
           <div class="content">
-            Here is content
+            <img src="icons/website_under_construction.png" style="width: 100%;">
           </div>
         </div>
 
@@ -790,7 +804,8 @@
             </div>
           </div>
           <div class="content">
-            Here is content
+            <img src="icons/website_under_construction.png" style="width: 100%;">
+            <h4>Previously called Study Guides, Background Guides for each committee at this year’s conference will be available soon.</h4>
           </div>
         </div>
 
@@ -801,7 +816,8 @@
             </div>
           </div>
           <div class="content">
-            Here is content
+            <img src="icons/website_under_construction.png" style="width: 100%;">
+            <h4>Country assignments will be available after registration closes.</h4>
           </div>
         </div>
 
@@ -812,7 +828,8 @@
             </div>
           </div>
           <div class="content">
-            Here is content
+            <img src="icons/website_under_construction.png" style="width: 100%;">
+            <h4>Delegate position papers will be made available to conference participants at the end of November.</h4>
           </div>
         </div>
 
@@ -823,7 +840,21 @@
             </div>
           </div>
           <div class="content">
-            Here is content
+            <div class="visit-block horizontal-center-table" url="https://www.youtube.com/channel/UCC29VT6n_YQmXQU1IW5_1CQ"><div class="horizontal-center-cell">
+                <div class="vertical-center-table"><div class="vertical-center-cell"><img class="logo" src="icons/contact/youtube.png"></div></div>
+                <div class="vertical-center-table"><div class="vertical-center-cell"><div class="title">YouTube</div></div></div>
+                <div class="vertical-center-table"><div class="vertical-center-cell"><img class="arrowright" src="icons/arrowright_blue.png"></div></div>
+            </div></div>
+            <div class="visit-block horizontal-center-table" url="http://www.facebook.com/panasiamun"><div class="horizontal-center-cell">
+                <div class="vertical-center-table"><div class="vertical-center-cell"><img class="logo" src="icons/contact/fb.png"></div></div>
+                <div class="vertical-center-table"><div class="vertical-center-cell"><div class="title">Facebook</div></div></div>
+                <div class="vertical-center-table"><div class="vertical-center-cell"><img class="arrowright" src="icons/arrowright_blue.png"></div></div>
+            </div></div>
+            <div class="visit-block horizontal-center-table" url="http://page.renren.com/601741102"><div class="horizontal-center-cell">
+                <div class="vertical-center-table"><div class="vertical-center-cell"><img class="logo" src="icons/contact/renren.png"></div></div>
+                <div class="vertical-center-table"><div class="vertical-center-cell"><div class="title">人人網</div></div></div>
+                <div class="vertical-center-table"><div class="vertical-center-cell"><img class="arrowright" src="icons/arrowright_blue.png"></div></div>
+            </div></div>
           </div>
         </div>
 
@@ -834,7 +865,20 @@
             </div>
           </div>
           <div class="content">
-            Here is content
+            <div class="welcome"><i>If you have any questions, please feel free to reach out to us at anytime.</i></div>
+            <div class="mail-block"><img src="icons/dot.png"><div class="title">Secretary General</div><div class="name">- Joyce Lee</div><a href="mailto:joyce.lee@panasiamun.com">joyce.lee@panasiamun.com</a></div>
+            <div class="mail-block"><img src="icons/dot.png"><div class="title">Deputy Secretary General</div><div class="name">- Madelain Liu</div><a href="mailto:madelain.liu@panasiamun.com">madelain.liu@panasiamun.com</a></div>
+            <div class="mail-block"><img src="icons/dot.png"><div class="title">Delegate Affairs</div><div class="name">- Bill Liao & Crystal Fang</div><a href="mailto:delegate.affairs@panasiamun.com">delegate.affairs@panasiamun.com</a></div>
+            <div class="mail-block"><img src="icons/dot.png"><div class="title">Public Relations</div><div class="name">- Brandon Lin & Will Tseng</div><a href="mailto:public.relations@panasiamun.com">public.relations@panasiamun.com</a></div>
+            <div class="mail-block"><img src="icons/dot.png"><div class="title">Information Technology</div><div class="name">- Chia-Han Kuo & Lincoln Wang</div><a href="mailto:it@panasiamun.com">it@panasiamun.com</a></div>
+            <div class="mail-block"><img src="icons/dot.png"><div class="title">Academics</div><div class="name">- Ederson Chang & Joseph Ban</div><a href="mailto:academics@panasiamun.com">academics@panasiamun.com</a></div>
+            <div class="mail-block"><img src="icons/dot.png"><div class="title">ASEAN Regional Forum</div><a href="mailto:arf@panasiamun.com">arf@panasiamun.com</a></div>
+            <div class="mail-block"><img src="icons/dot.png"><div class="title">Disarmament and International Security</div><a href="mailto:disec@panasiamun.com">disec@panasiamun.com</a></div>
+            <div class="mail-block"><img src="icons/dot.png"><div class="title">UN Educational, Scientific and Cultural Organization</div><a href="mailto:unesco@panasiamun.com">unesco@panasiamun.com</a></div>
+            <div class="mail-block"><img src="icons/dot.png"><div class="title">UN Office on Drugs and Crime</div><a href="mailto:unodc@panasiamun.com">unodc@panasiamun.com</a></div>
+            <div class="mail-block"><img src="icons/dot.png"><div class="title">UN Security Council</div><a href="mailto:unsc@panasiamun.com">unsc@panasiamun.com</a></div>
+            <div class="mail-block"><img src="icons/dot.png"><div class="title">United States National Security Council</div><a href="mailto:usnsc@panasiamun.com">usnsc@panasiamun.com</a></div>
+            <div class="mail-block"><img src="icons/dot.png"><div class="title">Shanghai Cooperation Organization 上海合作組織 (中文委員會)</div><a href="mailto:sco@panasiamun.com">sco@panasiamun.com</a></div>
           </div>
         </div>
         <!--
@@ -845,7 +889,7 @@
             </div>
           </div>
           <div class="content">
-            Here is content
+            <img src="icons/website_under_construction.png" style="width: 100%;">
           </div>
         </div>
         -->
@@ -857,7 +901,7 @@
             </div>
           </div>
           <div class="content">
-            Here is content
+            <img src="icons/website_under_construction.png" style="width: 100%;">
           </div>
         </div>
 
@@ -868,7 +912,7 @@
             </div>
           </div>
           <div class="content">
-            Here is content
+            <img src="icons/website_under_construction.png" style="width: 100%;">
           </div>
         </div>
 

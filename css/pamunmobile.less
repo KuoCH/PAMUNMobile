@@ -22,6 +22,12 @@ h4 {
 
 @font-face
 {
+  font-family: futura_bold;
+  src: url(../fonts/futura_bold.ttf);
+}
+
+@font-face
+{
   font-family: segoeui;
   src: url(../fonts/segoeui.ttf);
 }
@@ -48,6 +54,27 @@ h4 {
   src: url(../fonts/segoeuiz.ttf);
 }
 
+.horizontal-center-table {
+  display: table;
+  text-align: center;
+  width: 100%;
+}
+
+.horizontal-center-cell {
+  display: table-cell;
+}
+
+.vertical-center-table {
+  display: inline-table;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.vertical-center-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 .page .content.pure-article {
   padding: unit(`scale(30)`,px) unit(`scale(15)`,px) unit(`scale(20)`,px);
   //text-align: justify;
@@ -57,11 +84,11 @@ h4 {
 }
 
 #page-home .content {
+  .disable-select;
   padding-top: unit(`scale(30)`,px);
 }
 #page-home .hotkey {
   position: relative;
-  width: 100%;
   height: unit(`scale(30)`, px);
   background: #FFFFFF;
   margin-bottom: unit(`scale(10)`, px);
@@ -72,17 +99,15 @@ h4 {
 }
 
 #page-home .hotkey img {
-  .vertical-center;
-  left: unit(`scale(35.5)`, px);
   width: unit(`scale(25)`, px);
+  margin-right: unit(`scale(5)`, px);
 }
 
-#page-home .hotkey .label {
-  .vertical-center;
-  left: unit(`scale(63.5)`, px);
+#page-home .hotkey .title {
   font-size: unit(`scale(12)`, px);
   font-family: futura_oblique;
   color: #000000;
+  width: unit(`scale(80)`, px);
 }
 
 #page-meet-the-team .teammember {
@@ -100,30 +125,113 @@ h4 {
   margin-right: unit(`scale(8)`, px);
 }
 
-#page-meet-the-team .teammember>.string {
-  float: left;
-  position: relative;
-  height: unit(`scale(80/3)`, px);
-  width: unit(`scale(110)`, px);
-  color: #000000;
-  line-height: unit(`scale(10.2)`,px);
-  vertical-align: top;
-}
-
-#page-meet-the-team .teammember>.string>.title {
-}
-
-#page-meet-the-team .teammember>.string>.name {
-  color: #6B6B6B;
-  position: absolute;
-  bottom: 0px;
-  line-height: unit(`scale(7)`,px);
-}
-
 #page-meet-the-team .teammember>.name {
   color: #6B6B6B;
   position: absolute;
   bottom: unit(`scale(20/3)`, px);
   left: unit(`scale(49)`, px);
   line-height: unit(`scale(7)`,px);
+}
+
+
+#sponsor-wrapper {
+  text-align: center;
+}
+
+#sponsor-wrapper img {
+  width: unit(`scale(100)`, px);
+}
+
+#page-mail-us .content {
+  padding: unit(`scale(15)`, px) unit(`scale(14.5)`, px);
+}
+
+#page-mail-us .welcome {
+  font-family: segoeui;
+  font-size: unit(`scale(12)`, px);
+  padding-bottom: unit(`scale(3)`, px);
+}
+
+#page-mail-us .mail-block {
+  padding-top: unit(`scale(17)`, px);
+  padding-left: unit(`scale(7)`, px);
+  font-family: futura_oblique;
+  font-size: unit(`scale(9)`, px);
+  position: relative;
+}
+
+#page-mail-us .mail-block>img {
+  position: absolute;
+  top: unit(`scale(23)`, px); 
+  left: 0;
+  width: unit(`scale(4)`, px);
+}
+
+#page-mail-us .mail-block>.title {
+  font-size: unit(`scale(10)`, px);
+  color: #000000;
+}
+
+#page-mail-us .mail-block>.name {
+  color: #6B6B6B;
+}
+
+#page-mail-us .mail-block>a {
+  color: #4371A1;
+  text-decoration: underline;
+}
+
+#page-visit-us .content {
+  padding-top: unit(`scale(33)`, px);
+}
+
+#page-visit-us .visit-block {
+  height: unit(`scale(32)`, px);
+  margin-bottom: unit(`scale(20)`, px);
+  background: #FFFFFF;
+}
+
+#page-visit-us .visit-block.onpress {
+  background: #F4F4F4;
+}
+
+#page-visit-us .visit-block .logo {
+  height: unit(`scale(25)`, px);
+  width: unit(`scale(25)`, px);
+  margin-right: unit(`scale(5)`, px);
+}
+
+#page-visit-us .visit-block .title {
+  width: unit(`scale(60)`, px);
+  font-family: futura_oblique;
+  font-size: unit(`scale(12)`, px);
+}
+
+#page-visit-us .visit-block .arrowright {
+  height: unit(`scale(8)`, px);
+  width: unit(`scale(6)`, px);
+  margin-left: unit(`scale(20)`, px);
+}
+
+#page-schedule .content {
+  padding: unit(`scale(5)`, px) 0 unit(`scale(30)`, px);
+}
+
+#page-schedule .wrapper {
+  display: inline-block;
+  text-align: left;
+}
+
+#page-schedule .schedule-date {
+  padding-top: unit(`scale(25)`, px);
+  padding-bottom: unit(`scale(6)`, px);
+  font-family: futura_bold;
+  font-size: unit(`scale(10)`, px);
+  color: #4371A1;
+}
+
+#page-schedule .schedule-detail {
+  font-family: segoeui;
+  font-size: unit(`scale(10.5)`, px);
+  color: #000;
 }
