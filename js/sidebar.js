@@ -1,4 +1,4 @@
-$(window).load( function () {
+$(function () {
   //$(document).on('touchmove', function(e) { e.preventDefault();});
   $('.sb-content').on('tap', function(e) {
     if ($('#wrapper').hasClass('sb-active')) {

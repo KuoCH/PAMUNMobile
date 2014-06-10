@@ -3,7 +3,7 @@
 var showingPageId;
 var DEFAULT_PAGEID;
 
-$(window).load( function () {
+$(function () {
 
   DEFAULT_PAGEID = '#' + $('.page').first().attr('id');
   $(window).on('hashchange', checkUrlHash);
