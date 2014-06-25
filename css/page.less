@@ -89,3 +89,50 @@
 .page.showing-page .content{
   display: block;
 }
+
+.goback {
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
+  left: 0;
+  top: unit(`scale(35)`,px);
+  height: unit(`scale(35)`,px);
+  width: unit(`scale(35)`,px);
+  position: fixed;
+  z-index: 1;
+  display: inline-block;
+}
+
+.goback img {
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
+  left: 0;
+  top: unit(`scale(6)`,px);
+  height: unit(`scale(12.5)`,px);
+  width: unit(`scale(25)`,px);
+  position: absolute;
+  z-index: 1;
+}
+
+.goback .normal {
+  display: inline-block;
+}
+
+.goback .onpress {
+  display: none;
+}
+
+.goback.onpress .normal {
+  display: none;
+}
+
+.goback.onpress .onpress {
+  display: inline-block;
+}
+
+.goback.hide {
+  display: none;
+}
