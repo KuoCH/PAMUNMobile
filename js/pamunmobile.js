@@ -5,7 +5,7 @@ $(function () {
   new OnPress('.visit-block');
   $('.visit-block').on('tap', function(e) {
     //console.log($(this).attr('url'));
-    window.location=$(this).attr('url');
+    window.open($(this).attr('url'));
   });
   $.each(document.images, function(){
     var this_image = this;
