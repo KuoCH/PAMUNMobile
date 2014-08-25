@@ -190,6 +190,8 @@ h4 {
   height: unit(`scale(32)`, px);
   margin-bottom: unit(`scale(20)`, px);
   background: #FFFFFF;
+  color: #000000;
+  text-decoration: none;
 }
 
 #page-visit-us .visit-block.onpress {
@@ -240,13 +242,24 @@ h4 {
 #page-video .content {
   padding: unit(`scale(30)`, px) unit(`scale(15)`, px);
 }
+
+#page-video .video-title {
+  font-family: segoeui;
+  font-size: unit(`scale(10)`,px);
+}
+
+//container is used to make video 16:9
 #page-video .container {
   display: inline-block;
   position: relative;
   margin-bottom: unit(`scale(10)`, px);
   width: 100%;
+  background-image: url("../icons/media/loading.jpg");
+  background-size: contain;
+  padding-left: 0px;
+  padding-right: 0px;
 }
-#page-video .content .container:before {
+#page-video .container:before {
   padding-top: 56.25%; /* 16:9 aspect ratio */
 }
 
