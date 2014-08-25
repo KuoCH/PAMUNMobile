@@ -1,3 +1,4 @@
+rm -rf app/*
 cp -r css fonts icons index.html js app/
 rm -rf app.zip
 zip -r app.zip app
