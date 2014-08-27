@@ -1,7 +1,7 @@
 rm -rf app/*
 cp -r css fonts icons index.html js app/
 rm -rf app.zip
-zip -r app.zip app
+zip -9 -r app.zip app
 cp app.zip ~/Development/iOS\ WorkSpace/panasiamodelunitednations/
 MD5=$(md5 -q app.zip)
 echo $MD5 > app.zip.md5

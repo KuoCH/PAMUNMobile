@@ -52,30 +52,9 @@ h4 {
   src: url(../fonts/segoeuiz.ttf);
 }
 
-.horizontal-center-table {
-  display: table;
-  text-align: center;
-  width: 100%;
-}
-
-.horizontal-center-cell {
-  display: table-cell;
-}
-
-.vertical-center-table {
-  display: inline-table;
-  vertical-align: middle;
-  height: 100%;
-}
-
-.vertical-center-cell {
-  display: table-cell;
-  vertical-align: middle;
-}
-
 .page .content.pure-article {
   padding: 16.666667vw 8.333333vw 11.111111vw;
-  //text-align: justify;
+  /*text-align: justify;*/
   font-family: segoeui;
   font-size: 5.555556vw;
   letter-spacing: 0.027778vw;
@@ -101,10 +80,10 @@ h4 {
 
 #page-home .hotkey img {
   width: 13.888889vw;
-  margin-right: 2.777778vw;
 }
 
 #page-home .hotkey .title {
+  margin-left: 2.777778vw;
   font-size: 6.666667vw;
   font-family: futura_oblique;
   color: #000000;

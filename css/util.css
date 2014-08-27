@@ -1,3 +1,4 @@
+/*
 .vertical-center() {
   position: absolute;
   top: 50%;
@@ -37,3 +38,25 @@
   -o-transform:scale(@x, @y);
   transform:scale(@x, @y);
 }
+*/
+.horizontal-center-table {
+  display: table;
+  text-align: center;
+  width: 100%;
+}
+
+.horizontal-center-cell {
+  display: table-cell;
+}
+
+.vertical-center-table {
+  display: inline-table;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.vertical-center-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
