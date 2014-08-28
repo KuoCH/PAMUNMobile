@@ -227,7 +227,7 @@ h4 {
   font-size: 5.555556vw;
 }
 
-//container is used to make video 16:9
+/*container is used to make video 16:9*/
 #page-video .container {
   display: inline-block;
   position: relative;
@@ -239,6 +239,7 @@ h4 {
   padding-right: 0px;
 }
 #page-video .container:before {
+  position: relative;
   padding-top: 56.25%; /* 16:9 aspect ratio */
 }
 
