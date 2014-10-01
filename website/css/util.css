@@ -1,0 +1,62 @@
+/*
+.vertical-center() {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.horizontal-center() {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.both-center() {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translateX(-50%,-50%);
+  transform: translateX(-50%,-50%);
+}
+
+.disable-select() {
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
+}
+
+.transform(@x, @y) {
+  -webkit-transform:scale(@x, @y);
+  -moz-transform:scale(@x, @y);
+  -ms-transform:scale(@x, @y);
+  -o-transform:scale(@x, @y);
+  transform:scale(@x, @y);
+}
+*/
+.horizontal-center-table {
+  display: table;
+  text-align: center;
+  width: 100%;
+}
+
+.horizontal-center-cell {
+  display: table-cell;
+}
+
+.vertical-center-table {
+  display: inline-table;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.vertical-center-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+

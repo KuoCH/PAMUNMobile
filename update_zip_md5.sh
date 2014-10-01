@@ -1,5 +1,5 @@
-rm -rf app/*
-cp -r css fonts icons index.html js app/
+rm -rf app
+cp -r website app
 rm -rf app.zip
 zip -9 -r app.zip app
 cp app.zip ~/Development/iOS\ WorkSpace/panasiamodelunitednations/

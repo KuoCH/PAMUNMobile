@@ -10,7 +10,7 @@
 
 .page.showing-page {
   display: inline-block;
-  z-index: 0;
+  z-index: -1;
 }
 
 .page .header {
