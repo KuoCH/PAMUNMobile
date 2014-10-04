@@ -1,5 +1,4 @@
 $(function () {
-  $('.hotkey').on('tap', tapToShowPage);
   new OnPress('.hotkey');
 
   new OnPress('.visit-block');
