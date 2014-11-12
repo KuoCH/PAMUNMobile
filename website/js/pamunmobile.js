@@ -1,3 +1,21 @@
+/********************************************************************
+Pan Asia MUN Mobile Web APPS
+
+
+<copyright file="AuthenticationType.cs" company="Pan Asia MUN">
+Copyright (c) 2014 All Right Reserved, http://panasiamun.com//
+
+THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY 
+KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+</copyright>
+<author>Kuo, Chia-Han</author>
+<email>ChiaHan.Kuo@gmail.com</email>
+<date>2014-11-13</date>
+
+*********************************************************************/
 $(function () {
   new OnPress('.hotkey');
 
@@ -15,7 +33,7 @@ $(function () {
     } else {
     */
     var src = $(this_image).attr('src') || '' ;
-    if(!src.length > 0){
+    if(src.length <= 0){
       this_image.src = 'icons/logo_blue.png'; // show loading
       var lsrc = $(this_image).attr('lsrc') || '' ;
       if(lsrc.length > 0){

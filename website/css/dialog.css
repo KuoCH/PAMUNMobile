@@ -1,0 +1,73 @@
+/********************************************************************
+Pan Asia MUN Mobile Web APPS
+
+
+<copyright file="AuthenticationType.cs" company="Pan Asia MUN">
+Copyright (c) 2014 All Right Reserved, http://panasiamun.com//
+
+THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY 
+KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+</copyright>
+<author>Kuo, Chia-Han</author>
+<email>ChiaHan.Kuo@gmail.com</email>
+<date>2014-11-13</date>
+
+*********************************************************************/
+.dialog-content {
+  display:none;
+}
+
+#dialog {
+  font-family: futura_oblique;
+}
+
+#dialog.active {
+  
+}
+#dialog-showing-content {
+  width: 72vw;
+  max-height: 122vw;
+  overflow: auto;
+}
+
+#dialog-box {
+  display: inline-block;
+  position: fixed;
+  top: -100%;
+  left: 10vw;
+  right: 10vw;
+  max-height: 130vw;
+  padding: 3vw;
+  z-index: 101;
+  background: #fff;
+  border: 1vw solid #ccc;
+  -moz-border-radius: 4vw;
+  -webkit-border-radius: 4vw;
+  -khtml-border-radius: 4vw;
+  -moz-box-shadow: 0 1px 5px #333;
+  -webkit-box-shadow: 0 1px 5px #333;
+}
+
+#dialog-cover {
+  background: black;
+  opacity: .5;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 100;
+}
+
+#dialog-box-close {
+  position: absolute;
+  top: -4vw;
+  right: -4vw;
+  width: 8vw;
+  height: 8vw;
+  background-image: url(../icons/close.png);
+  background-size: contain;
+}

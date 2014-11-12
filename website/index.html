@@ -1,4 +1,22 @@
 <!DOCTYPE html> 
+<!-- ********************************************************************
+Pan Asia MUN Mobile Web APPS
+
+
+<copyright file="AuthenticationType.cs" company="Pan Asia MUN">
+Copyright (c) 2014 All Right Reserved, http://panasiamun.com//
+
+THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY 
+KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+</copyright>
+<author>Kuo, Chia-Han</author>
+<email>ChiaHan.Kuo@gmail.com</email>
+<date>2014-11-13</date>
+
+ ********************************************************************* -->
 <html>
   <head>
     <script src="js/checkmobile.js"></script>
@@ -12,12 +30,15 @@
     <link href="css/sidebar.css" rel="stylesheet">
     <link href="css/page.css" rel="stylesheet">
     <link href="css/pamunmobile.css" rel="stylesheet">
+    <link href="css/dialog.css" rel="stylesheet">
     <script src="js/jquery-1.11.0.js"></script>
     <script src="js/util.js"></script>
     <script src="js/jquery.mobile.touchevent.js"></script>
+    <script src="js/dialog.js"></script>
     <script src="js/page.js"></script>
     <script src="js/sidebar.js"></script>
     <script src="js/pamunmobile.js"></script>
+    <script src="js/countdown.js"></script>
   </head>
 
   <body>
@@ -100,11 +121,92 @@
             </div>
           </div>
           <div class="content">
+            <div id="countdown-frame">
+            </div>
+            <div id="important-dates-frame">
+              <div class="important-date-item">
+                <div class="important-date-dot"></div>
+                <div class="important-date-date">11/25</div>
+                <div class="important-date-title">Position Paper Deadline</div>
+              </div>
+              <div class="important-date-item">
+                <div class="important-date-dot"></div>
+                <div class="important-date-date">12/4-7</div>
+                <div class="important-date-title">Pan Asia MUN 2014</div>
+              </div>
+            </div>
+            <div id="news-frame">
+              <div id="news-label"></div>
+              <div class="news-item dialog-activator">
+                <img class="news-pic" lsrc="icons/news/social_event_night_1_poster.jpg"/>
+                <div class="news-title">Social Event Dress Code: Night 1 Dinner Banquet</div>
+                <div class="news-article dialog-content">
+                  <img class="news-dialog-pic" lsrc="icons/news/social_event_night_1_poster.jpg"/>
+                  <div class="news-dialog-title">Social Event Dress Code: Night 1 Dinner Banquet</div>
+                  <div class="news-dialog-article">
+                    The Imperial Banquet 宮艷<br/>
+                    <br/>
+                    Event time: 18:30 - 22:00<br/>
+                    Dress Code: Yellow or purple formal wear, dresses for women and suits for men.<br/>
+                    Bring out your best evening wear in yellow and purple, or accessorize with these two Chinese aristocratic colors!<br/>
+                    <br/>
+                    Venue:<br/> 新店彭園會館<br/> The Peng’s Agora Garden (Xindian)<br/>
+                    Location:<br/> 新北市新店區北新路三段219號2樓<br/>
+                    2F., No.219, Sec. 3, Beixin Rd.,<br/> Xindian Dist., New Taipei City<br/>
+                    Transportation:<br/> 捷運大坪林站四號出口<br/> Dapinglin Station Exit 4<br/> (30 mins travel time from TICC)<br/>
+                  </div>
+                </div>
+              </div>
+              <div class="news-item dialog-activator">
+                <img class="news-pic" lsrc="icons/news/registration_has_ended.jpg"/>
+                <div class="news-title">Registration Has Ended!</div>
+                <div class="news-article dialog-content">
+                  <img class="news-dialog-pic" lsrc="icons/news/registration_has_ended.jpg"/>
+                  <div class="news-dialog-title">Registration Has Ended!</div>
+                  <div class="news-dialog-article">
+                    11/01/2014<br/>
+                    Thank you for everyone's support for Pan Asia MUN! Registration has officially ended. Please stay tuned to this page for updates regarding background guides, country assignments, and other conference updates. We can’t wait to see you on 12/4-7!<br/>
+                    [報名截止!]<br/>
+                    2014泛亞洲模擬聯合國會議報名全部結束！<br/>
+                    請繼續追蹤粉專發布的最新消息，期待我們會期的見面！
+                  </div>
+                </div>
+              </div>
+              <div class="news-item dialog-activator">
+                <img class="news-pic" lsrc="icons/news/flying_v.jpg"/>
+                <div class="news-title">PAMUN 2014 FlyingV project online!</div>
+                <div class="news-article dialog-content">
+                  <img class="news-dialog-pic" lsrc="icons/news/flying_v.jpg"/>
+                  <div class="news-dialog-title">PAMUN 2014 FlyingV project online!</div>
+                  <div class="news-dialog-article">
+                    10/02/2014<br/>
+                    Pan Asia MUN 2014’s FlyingV crowdfunding project is now online! If you want to learn more about this year’s conference or get a sneak peek at our limited edition souvenirs, please click into the link below!<br/><a href="https://www.flyingv.cc/project/4260">https://www.flyingv.cc/project/4260</a>
+                  </div>
+                </div>
+              </div>
+              <div class="news-item dialog-activator">
+                <img class="news-pic" lsrc="icons/news/at_boutique_hotel.jpg"/>
+                <div class="news-title">Hotel Sponsor: AT Boutique</div>
+                <div class="news-article dialog-content">
+                  <img class="news-dialog-pic" lsrc="icons/news/at_boutique_hotel.jpg"/>
+                  <div class="news-dialog-title">Hotel Sponsor: AT Boutique</div>
+                  <div class="news-dialog-article">
+                    09/01/2014<br/>Pan Asia MUN 2014 has partnered with AT Boutique Hotel to provide delegates with discounted rates. Located in the heart of Taipei Xinyi District and only a few short minutes away from this year's conference venue, AT Boutique is the perfect high-end, modern hotel for out of town delegates. For more information on our partner hotel, rooming plans, booking, and payment, please visit our Accommodation page.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <!--
             <a class="hotkey horizontal-center-table" href="conference-overview.html"><div class="horizontal-center-cell"><div class="vertical-center-table"><div class="vertical-center-cell"><img src="icons/hotkeys/hotkey_conference_overview.png"></div></div><div class="vertical-center-table title"><div class="vertical-center-cell">Conference</div></div></div></a>
             <a class="hotkey horizontal-center-table" href="registration-overview.html"><div class="horizontal-center-cell"><div class="vertical-center-table"><div class="vertical-center-cell"><img src="icons/hotkeys/hotkey_registration_overview.png"></div></div><div class="vertical-center-table title"><div class="vertical-center-cell">Registration</div></div></div></a>
             <a class="hotkey horizontal-center-table" href="letter-from-academics.html"><div class="horizontal-center-cell"><div class="vertical-center-table"><div class="vertical-center-cell"><img src="icons/committees/committees.png"></div></div><div class="vertical-center-table title"><div class="vertical-center-cell">Committees</div></div></div></a>
             <a class="hotkey horizontal-center-table" href="social-events.html"><div class="horizontal-center-cell"><div class="vertical-center-table"><div class="vertical-center-cell"><img src="icons/hotkeys/hotkey_social_events.png"></div></div><div class="vertical-center-table title"><div class="vertical-center-cell">Social Events</div></div></div></a>
             <a class="hotkey horizontal-center-table" href="visit-us.html"><div class="horizontal-center-cell"><div class="vertical-center-table"><div class="vertical-center-cell"><img src="icons/contact/contact_us.png"></div></div><div class="vertical-center-table title"><div class="vertical-center-cell">Contact Us</div></div></div></a>
+            -->
           </div>
         </div>
 

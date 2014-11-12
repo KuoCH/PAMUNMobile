@@ -1,6 +1,24 @@
+/********************************************************************
+Pan Asia MUN Mobile Web APPS
+
+
+<copyright file="AuthenticationType.cs" company="Pan Asia MUN">
+Copyright (c) 2014 All Right Reserved, http://panasiamun.com//
+
+THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY 
+KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+</copyright>
+<author>Kuo, Chia-Han</author>
+<email>ChiaHan.Kuo@gmail.com</email>
+<date>2014-11-13</date>
+
+*********************************************************************/
 .page .header {
   background: #4575AA;
-  color:white;
+  color: white;
 }
 
 h4 {
@@ -60,13 +78,136 @@ h4 {
   letter-spacing: 0.027778vw;
 }
 
+
+/*  ===  page-home  ===  */
 #page-home .content {
   -webkit-user-select: none;  
   -moz-user-select: none;    
   -ms-user-select: none;      
   user-select: none;
-  padding-top: 16.666667vw;
+/*  padding-top: 16.666667vw;*/
 }
+
+#countdown-frame {
+  position: relative;
+  margin-top: 6.66667vw;
+  margin-left: 15.27778vw;
+  height: 66.66667vw;
+  width: 69.44444vw;
+  vertical-align: middle;
+ /* border: 3px ridge #4575AA */
+}
+
+#countdown-day-number {
+  position: absolute;
+  top: 20vw;
+  width: 69.44444vw;
+  text-align: center;
+  font-size: 25vw;
+  z-index: 11;
+  font-family: futura_oblique;
+  line-height: 100%;
+}
+
+#countdown-day-unit {
+  position: absolute;
+  height: 66.66667vw;
+  width: 69.44444vw;
+  background-image: url(../icons/home/countdown_days.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+#important-dates-frame {
+  margin-top: 3.33333vw;
+  margin-left: 18.61111vw;
+  font-family: futura_oblique;
+}
+
+.important-date-item {
+  margin-top: 3.33333vw;
+  height: 10vw;
+  position: relative;
+}
+
+.important-date-dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3.33333vw;
+  height: 3.33333vw;
+  background-image: url(../icons/home/important_date_dot.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.important-date-date {
+  position: absolute;
+  top: 0;
+  left: 6.66667vw;
+  font-size: 3.33333vw;
+  vertical-align: middle;
+  height: 3.33333vw
+  line-height: 100%;
+}
+
+.important-date-title {
+  position: absolute;
+  top: 5vw;
+  left: 6.66667vw;
+  font-size: 6.11111vw;
+  height: 6.11111vw
+  vertical-align: middle;
+  line-height: 100%;
+}
+
+#news-frame {
+  margin-top: 6.66667vw;
+  margin-left: 15.27778vw;
+  font-family: futura_oblique;
+}
+
+#news-label {
+  width: 13.88889vw;
+  height: 6.66667vw;
+  background-image: url(../icons/home/news_label.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.news-item {
+  position: relative;
+  margin: 3.33333vw;
+  margin-right: 18.61111vw;
+}
+
+.news-pic {
+  width: 100%;
+}
+
+.news-title {
+  margin-top: 3.33333vw;
+  font-size: 5.55556vw;
+}
+
+.news-article {
+  display: none;
+}
+
+#dialog-showing-content .news-dialog-pic {
+  width: 72vw;
+}
+
+#dialog-showing-content .news-dialog-title {
+  font-size: 7vw;
+}
+
+#dialog-showing-content .news-dialog-article {
+  font-size: 5vw;
+}
+
+/*
 #page-home .hotkey {
   position: relative;
   height: 16.666667vw;
@@ -89,7 +230,9 @@ h4 {
   color: #000000;
   width: 44.444444vw;
 }
+*/
 
+/*  ===  page-meet-the-team  ===  */
 #page-meet-the-team .teammember {
   height: 22.222222vw;
   padding: 3.333333vw 11.666667vw;
@@ -114,6 +257,7 @@ h4 {
 }
 
 
+/*  ===  page-sponsors  ===  */
 #sponsor-wrapper {
   text-align: center;
 }
@@ -122,6 +266,7 @@ h4 {
   width: 55.555556vw;
 }
 
+/*  ===  page-mail-us  ===  */
 #page-mail-us .content {
   padding: 8.333333vw 8.055556vw;
 }
@@ -161,6 +306,7 @@ h4 {
   text-decoration: underline;
 }
 
+/*  ===  page-visit-us  ===  */
 #page-visit-us .content {
   padding-top: 18.333333vw;
 }
@@ -195,6 +341,7 @@ h4 {
   margin-left: 11.111111vw;
 }
 
+/*  ===  page-schedule  ===  */
 #page-schedule .content {
   padding: 2.777778vw 0 16.666667vw;
 }
@@ -218,6 +365,7 @@ h4 {
   color: #000;
 }
 
+/*  ===  page-video  ===  */
 #page-video .content {
   padding: 16.666667vw 8.333333vw;
 }
@@ -233,7 +381,7 @@ h4 {
   position: relative;
   margin-bottom: 5.555556vw;
   width: 100%;
-  background-image: url("../icons/media/loading.jpg");
+  background-image: url(../icons/media/loading.jpg);
   background-size: contain;
   padding-left: 0px;
   padding-right: 0px;
