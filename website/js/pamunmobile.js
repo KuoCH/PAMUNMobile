@@ -34,7 +34,7 @@ $(function () {
     */
     var src = $(this_image).attr('src') || '' ;
     if(src.length <= 0){
-      this_image.src = 'icons/logo_blue.png'; // show loading
+      this_image.src = 'icons/loading.jpg'; // show loading
       var lsrc = $(this_image).attr('lsrc') || '' ;
       if(lsrc.length > 0){
         var img = new Image();
