@@ -12,3 +12,5 @@ Position Paper:
   ??
 Conference Tip:
   ??
+Video:
+  rotate orientation when video is playing

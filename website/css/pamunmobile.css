@@ -413,3 +413,13 @@ h4 {
   width: 100%;
   height: 100%;
 }
+
+/*  ===  page-posters  ===  */
+#page-posters .content {
+  padding:5vw 0vw;
+}
+
+.poster-img {
+  width: 80vw;
+  margin: 10vw;
+}
