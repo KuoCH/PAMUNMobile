@@ -350,27 +350,32 @@ h4 {
 }
 
 /*  ===  page-schedule  ===  */
-#page-schedule .content {
-  padding: 2.777778vw 0 16.666667vw;
-}
-
-#page-schedule .wrapper {
-  display: inline-block;
-  text-align: left;
-}
-
 #page-schedule .schedule-date {
-  padding-top: 13.888889vw;
-  padding-bottom: 3.333333vw;
+  padding: 12vw 5vw 4vw;
   font-family: futura_bold;
   font-size: 5.555556vw;
   color: #4371A1;
 }
 
-#page-schedule .schedule-detail {
+#page-schedule .schedule-day {
+  padding: 0vw 8vw;
+  display: table;
+}
+
+#page-schedule .schedule-session {
+  display: table-row;
   font-family: segoeui;
   font-size: 5.833333vw;
   color: #000;
+}
+
+#page-schedule .schedule-time {
+  display: table-cell;
+}
+
+#page-schedule .schedule-detail {
+  display: table-cell;
+  padding-left: 3vw;
 }
 
 /*  ===  page-video  ===  */
