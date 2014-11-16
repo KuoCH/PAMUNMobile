@@ -1,3 +1,4 @@
+find . -name ".DS_Store" -exec rm -f {} \;
 rm -rf app
 cp -r website app
 rm -rf app.zip
