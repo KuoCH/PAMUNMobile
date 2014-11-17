@@ -225,27 +225,47 @@ h4 {
 */
 
 /*  ===  page-meet-the-team  ===  */
-#page-meet-the-team .teammember {
+#page-meet-the-team .content {
+  padding-top: 5vw;
+}
+
+.teammember {
   height: 22.222222vw;
-  padding: 3.333333vw 11.666667vw;
+  padding: 7vw 11.666667vw 0;
   position: relative;
   font-family: futura_oblique;
   font-size: 3.888889vw;
 }
 
-#page-meet-the-team .teammember>img {
+.teammember-img {
   float: left;
   width: 11.111111vw;
   height: 14.444444vw;
   margin-right: 4.444444vw;
 }
 
-#page-meet-the-team .teammember>.name {
+.teammember-name {
   color: #6B6B6B;
   position: absolute;
-  bottom: 3.333333vw;
+  bottom: 0;
   left: 27.222222vw;
   line-height: 3.888889vw;
+}
+
+#dialog-showing-content .teammember-dialog-img {
+  width: 72vw;
+}
+
+#dialog-showing-content .teammember-dialog-title {
+  font-size: 7vw;
+}
+
+#dialog-showing-content .teammember-dialog-name {
+  font-size: 7vw;
+}
+
+#dialog-showing-content .teammember-dialog-detail {
+  font-size: 5vw;
 }
 
 /*  ===  page-sponsors  ===  */

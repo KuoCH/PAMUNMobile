@@ -1,14 +1,10 @@
-Meet the team:
-  Dialog
 transportation:
   mrt
+Country Assignment:
+  add into page
 Background Guides:
   content??
-Country Assignment:
-  ??(has sent)
 Position Paper:
-  ??
-Conference Tip:
-  (delete)
+  at the end of November
 Video:
   rotate orientation when video is playing

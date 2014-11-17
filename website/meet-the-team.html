@@ -30,9 +30,11 @@ PARTICULAR PURPOSE.
     <link href="css/sidebar.css" rel="stylesheet">
     <link href="css/page.css" rel="stylesheet">
     <link href="css/pamunmobile.css" rel="stylesheet">
+    <link href="css/dialog.css" rel="stylesheet">
     <script src="js/jquery-1.11.0.js"></script>
     <script src="js/util.js"></script>
     <script src="js/jquery.mobile.touchevent.js"></script>
+    <script src="js/dialog.js"></script>
     <script src="js/page.js"></script>
     <script src="js/sidebar.js"></script>
     <script src="js/pamunmobile.js"></script>
@@ -113,27 +115,279 @@ PARTICULAR PURPOSE.
             </div>
           </div>
           <div class="content">
-            <div class="teammember"><img lsrc="icons/about/team/joyce.jpg">Secretary General<div class="name"> - Joyce Lee</div></div>
-            <div class="teammember"><img lsrc="icons/about/team/madelain.jpg">Deputy Secretary General<div class="name"> - Madelain Liu</div></div>
-            <div class="teammember"><img lsrc="icons/about/team/ken.jpg">Content Editor<div class="name"> - Kenneth Yung</div></div>
-            <div class="teammember"><img lsrc="icons/about/team/ederson.jpg">Under Secretary General of Academics<div class="name"> - Ederson Chang</div></div>
-            <div class="teammember"><img lsrc="icons/about/team/joseph.jpg">Under Secretary General of Academics<div class="name"> - Joseph Ban</div></div>
-            <div class="teammember"><img lsrc="icons/about/team/bill.jpg">Under Secretary General of Delegate Affairs<div class="name"> - Bill Liao</div></div>
-            <div class="teammember"><img lsrc="icons/about/team/crystal.jpg">Under Secretary General of Delegate Affairs<div class="name"> - Crystal Fang</div></div>
-            <div class="teammember"><img lsrc="icons/about/team/angel.jpg">Under Secretary General of Design<div class="name"> - Angel Chiu</div></div>
-            <div class="teammember"><img lsrc="icons/about/team/alan.jpg">Under Secretary General of Finance<div class="name"> - Alan Yu</div></div>
-            <div class="teammember"><img lsrc="icons/about/team/evelyn.jpg">Under Secretary General of Finance<div class="name"> - Evelyn Fu</div></div>
-            <div class="teammember"><img lsrc="icons/about/team/aaron.jpg">Deputy Under Secretary General of Finance<div class="name"> - Aaron Lin</div></div>
-            <div class="teammember"><img lsrc="icons/about/team/chia.jpg">Under Secretary General of Information Techology<div class="name"> - Chia-Han Kuo</div></div>
-            <div class="teammember"><img lsrc="icons/about/team/lincoln.jpg">Under Secretary General of Information Techology<div class="name"> - Lincoln Wang</div></div>
-            <div class="teammember"><img lsrc="icons/about/team/jake.jpg">Under Secretary General of Logistics<div class="name"> - Jake Chang</div></div>
-            <div class="teammember"><img lsrc="icons/about/team/vivian.jpg">Under Secretary General of Logistics<div class="name"> - Vivian Huang</div></div>
-            <div class="teammember"><img lsrc="icons/about/team/eva.jpg">Under Secretary General of Marketing<div class="name"> - Eva Huang</div></div>
-            <div class="teammember"><img lsrc="icons/about/team/rona.jpg">Under Secretary General of Marketing<div class="name"> - Rona Chen</div></div>
-            <div class="teammember"><img lsrc="icons/about/team/brandon.jpg">Under Secretary General of Public Relations<div class="name"> - Brandon Lin</div></div>
-            <div class="teammember"><img lsrc="icons/about/team/will.jpg">Under Secretary General of Public Relations<div class="name"> - Will Tseng</div></div>
-            <div class="teammember"><img lsrc="icons/about/team/violet.jpg">Under Secretary General of Social Events<div class="name"> - Violet Lee</div></div>
-            <div class="teammember"><img lsrc="icons/about/team/wendy.jpg">Under Secretary General of Social Events<div class="name"> - Wendy Chen</div></div>
+            <div class="teammember dialog-activator">
+              <img class="teammember-img" lsrc="icons/about/team/joyce.jpg"/>
+              <div class="teammember-title">Secretary General</div>
+              <div class="teammember-name"> - Joyce Lee</div>
+              <div class="dialog-content">
+                <img class="teammember-dialog-img" lsrc="icons/about/team/joyce.jpg"/>
+                <div class="teammember-dialog-title">Secretary General</div>
+                <div class="teammember-dialog-name">Joyce Lee</div>
+                <div class="teammember-dialog-detail">
+                  Joyce is a 4th year in the Department of Foreign Languages and Literatures at National Taiwan University. She participated in her first Model UN conference while attending high school in Canada. Since then, she has expanded her experience to include serving as Dais and Secretariat members at high school and collegiate level conferences throughout North America and Taiwan. She is honored to be working with such a group of distinguished and dedicated staff members and looks forward to meeting everyone in December!
+                </div>
+              </div>
+            </div>
+            <div class="teammember dialog-activator">
+              <img class="teammember-img" lsrc="icons/about/team/madelain.jpg"/>
+              <div class="teammember-title">Deputy Secretary General</div>
+              <div class="teammember-name"> - Madelain Liu</div>
+              <div class="dialog-content">
+                <img class="teammember-dialog-img" lsrc="icons/about/team/madelain.jpg"/>
+                <div class="teammember-dialog-title">Deputy Secretary General</div>
+                <div class="teammember-dialog-name">Madelain Liu</div>
+                <div class="teammember-dialog-detail">
+                  Madelain is a 3rd year majoring in International Business and Chinese Literature at National Taiwan University. She attended her first Model UN conference as a senior in high school and then attended the 2013 PAMUN after entering NTU. She served as the Director of Public Relations and Marketing for the 15th NTUMUN executive board and was also head delegate for the NTU delegation to the 2014 World MUN. She’s now thrilled to be working with her fellow team members and cannot wait to meet everyone at PAMUN 2014.
+                </div>
+              </div>
+            </div>
+            <div class="teammember dialog-activator">
+              <img class="teammember-img" lsrc="icons/about/team/ken.jpg"/>
+              <div class="teammember-title">Content Editor</div>
+              <div class="teammember-name"> - Kenneth Yung</div>
+              <div class="dialog-content">
+                <img class="teammember-dialog-img" lsrc="icons/about/team/ken.jpg"/>
+                <div class="teammember-dialog-title">Content Editor</div>
+                <div class="teammember-dialog-name">Kenneth Yung</div>
+                <div class="teammember-dialog-detail">
+                  Kenneth is a 5th year studying at the National Taiwan University College of Medicine. In high school, he participated in Academic Decathalon, Future Business Leader of America, and DECA; however, his first experience with Model UN was not until college when he attended PAMUN 2012 as a delegate. Although inexperienced at the time, his interest in international issues has greatly expanded since then. He is now excited to be part of the team bringing PAMUN 2014 to you.
+                </div>
+              </div>
+            </div>
+            <div class="teammember dialog-activator">
+              <img class="teammember-img" lsrc="icons/about/team/ederson.jpg"/>
+              <div class="teammember-title">Under Secretary General of Academics</div>
+              <div class="teammember-name"> - Ederson Chang</div>
+              <div class="dialog-content">
+                <img class="teammember-dialog-img" lsrc="icons/about/team/ederson.jpg"/>
+                <div class="teammember-dialog-title">Under Secretary General of Academics</div>
+                <div class="teammember-dialog-name">Ederson Chang</div>
+                <div class="teammember-dialog-detail">
+                  Ederson is a 3rd year majoring in Business Administration (BBA) at National Taiwan University. He began his MUN career as a delegate at PAMUN 2012. Since then, he has dedicated himself to MUN, and has served on the dais of numerous conferences in Taiwan. This year, he is excited to serve as the Under Secretary General of Academics, and will devote himself to providing delegates with the best experience imaginable at PAMUN 2014.
+                </div>
+              </div>
+            </div>
+            <div class="teammember dialog-activator">
+              <img class="teammember-img" lsrc="icons/about/team/joseph.jpg"/>
+              <div class="teammember-title">Under Secretary General of Academics</div>
+              <div class="teammember-name"> - Joseph Ban</div>
+              <div class="dialog-content">
+                <img class="teammember-dialog-img" lsrc="icons/about/team/joseph.jpg"/>
+                <div class="teammember-dialog-title">Under Secretary General of Academics</div>
+                <div class="teammember-dialog-name">Joseph Ban</div>
+                <div class="teammember-dialog-detail">
+                  Joseph is currently an undergraduate student majoring in English Literature and International Relationships. As a longtime MUN event participant and advocate, he has received awards in both international and domestic MUN conferences. As the Under Secretary General of Academics of Pan Asia MUN 2014, he will fully engage himself and his fellow members of the academic department to bring forth an unforgettable experience for the delegates of PAMUN 2014.
+                </div>
+              </div>
+            </div>
+            <div class="teammember dialog-activator">
+              <img class="teammember-img" lsrc="icons/about/team/bill.jpg"/>
+              <div class="teammember-title">Under Secretary General of Delegate Affairs</div>
+              <div class="teammember-name"> - Bill Liao</div>
+              <div class="dialog-content">
+                <img class="teammember-dialog-img" lsrc="icons/about/team/bill.jpg"/>
+                <div class="teammember-dialog-title">Under Secretary General of Delegate Affairs</div>
+                <div class="teammember-dialog-name">Bill Liao</div>
+                <div class="teammember-dialog-detail">
+                  Bill is a 3rd year majoring in International Relations and Sociology in National Taiwan University. His experience includes being on the dais for both High School MUN 2013 and PAMUN 2013. This time, he looks forward to being part of the host team responsible for bringing the world to the largest MUN conference of its kind in Taiwan and will ensure that participants fully enjoy PAMUN 2014 from signup all the way through last social event.
+                </div>
+              </div>
+            </div>
+            <div class="teammember dialog-activator">
+              <img class="teammember-img" lsrc="icons/about/team/crystal.jpg"/>
+              <div class="teammember-title">Under Secretary General of Delegate Affairs</div>
+              <div class="teammember-name"> - Crystal Fang</div>
+              <div class="dialog-content">
+                <img class="teammember-dialog-img" lsrc="icons/about/team/crystal.jpg"/>
+                <div class="teammember-dialog-title">Under Secretary General of Delegate Affairs</div>
+                <div class="teammember-dialog-name">Crystal Fang</div>
+                <div class="teammember-dialog-detail">
+                  Crystal is a 3rd year majoring in Library and Information Sciences at National Taiwan University. She participated in her high school’s English Debate Club, then attended her first MUN conference in college. It was after PAMUN 2012, that she discovered her passion for MUN and proceeded to serve on the dais for PAMUN 2013 and NHSMUN 2014 and as Deputy Secretary General of HSMUN 2014. She is honored to be part of the host team responsible for organizing PAMUN 2014,the largest MUN event in Taiwan, and looks forward to bringing this fantastic conference to everyone later this year.
+                </div>
+              </div>
+            </div>
+            <div class="teammember dialog-activator">
+              <img class="teammember-img" lsrc="icons/about/team/angel.jpg"/>
+              <div class="teammember-title">Under Secretary General of Design</div>
+              <div class="teammember-name"> - Angel Chiu</div>
+              <div class="dialog-content">
+                <img class="teammember-dialog-img" lsrc="icons/about/team/angel.jpg"/>
+                <div class="teammember-dialog-title">Under Secretary General of Design</div>
+                <div class="teammember-dialog-name">Angel Chiu</div>
+                <div class="teammember-dialog-detail">
+                  Angel is a 2nd year majoring in Foreign Languages and Literatures at National Taiwan University. In high school, she was the Director of Art and Design in the Computer Research Club. Since then, she further engaged herself in numerous graphic design projects. Her first experience with MUN was at PAMUN where she was awarded with the Best Diplomacy Award. This year, she is honored to be leading the innovative team responsible for designing all art and ensuring their quality and knows that this will be a marvelous PAMUN 2014 for all!
+                </div>
+              </div>
+            </div>
+            <div class="teammember dialog-activator">
+              <img class="teammember-img" lsrc="icons/about/team/alan.jpg"/>
+              <div class="teammember-title">Under Secretary General of Finance</div>
+              <div class="teammember-name"> - Alan Yu</div>
+              <div class="dialog-content">
+                <img class="teammember-dialog-img" lsrc="icons/about/team/alan.jpg"/>
+                <div class="teammember-dialog-title">Under Secretary General of Finance</div>
+                <div class="teammember-dialog-name">Alan Yu</div>
+                <div class="teammember-dialog-detail">
+                  Alan is a 3rd year majoring in Finance at National Taiwan University and is now also the president of the Student Association for the Department of Finance. He attended his first MUN conference as a delegate of PAMUN 2012 then attended TMUN 2013 the year after. At PAMUN 2013, he devoted himself as a staff in the Department of Social Event, where he was responsible for hosting the Dinner Soirée. This year, he is glad to be collaborating with fellow staff members as the Under Secretary General of Finance to bring an unforgettable MUN experience to all!
+                </div>
+              </div>
+            </div>
+            <div class="teammember dialog-activator">
+              <img class="teammember-img" lsrc="icons/about/team/evelyn.jpg"/>
+              <div class="teammember-title">Under Secretary General of Finance</div>
+              <div class="teammember-name"> - Evelyn Fu</div>
+              <div class="dialog-content">
+                <img class="teammember-dialog-img" lsrc="icons/about/team/evelyn.jpg"/>
+                <div class="teammember-dialog-title">Under Secretary General of Finance</div>
+                <div class="teammember-dialog-name">Evelyn Fu</div>
+                <div class="teammember-dialog-detail">
+                  Evelyn is a 3rd year in the Department of International Business at National Taiwan University. With her previous experiences in hosting activities as well as an interest in finance, she believes that she is well-prepared to carry out the responsibilities of Under Secretary General of Finance. This is her first experience organizing a MUN conference and she is really honored to be surrounded by such an experienced staff. She looks forward to bringing an amazing experience to everyone taking part in PAMUN 2014.
+                </div>
+              </div>
+            </div>
+            <div class="teammember dialog-activator">
+              <img class="teammember-img" lsrc="icons/about/team/aaron.jpg"/>
+              <div class="teammember-title">Deputy Under Secretary General of Finance</div>
+              <div class="teammember-name"> - Aaron Lin</div>
+              <div class="dialog-content">
+                <img class="teammember-dialog-img" lsrc="icons/about/team/aaron.jpg"/>
+                <div class="teammember-dialog-title">Deputy Under Secretary General of Finance</div>
+                <div class="teammember-dialog-name">Aaron Lin</div>
+                <div class="teammember-dialog-detail">
+                  Aaron is a 2nd year majoring in Accounting at National Taiwan University. He attended his first MUN conference, HSMUN 2013, at the end of senior year in high school and eagerly joined NTUMUN upon entering college. Later that year, he had an exhilarating experience at PAMUN 2013 as a delegate of WHO. He sees MUN as an ideal platform to debate important global issues with others. This passion stems from his childhood, when he lived in the United States of America, Singapore, Vietnam, and Australia in addition to Taiwan. This gave him a strong understanding of intercountry cultural differences, forced him to reevaluate beliefs and values he acquired in Taiwan, and also encouraged him to analyze contemporary issues from multiple viewpoints. Aaron hopes PAMUN 2014 will be just as great an experience for you as it was for him!
+                </div>
+              </div>
+            </div>
+            <div class="teammember dialog-activator">
+              <img class="teammember-img" lsrc="icons/about/team/chia.jpg"/>
+              <div class="teammember-title">Under Secretary General of Information Techology</div>
+              <div class="teammember-name"> - Chia-Han Kuo</div>
+              <div class="dialog-content">
+                <img class="teammember-dialog-img" lsrc="icons/about/team/chia.jpg"/>
+                <div class="teammember-dialog-title">Under Secretary General of Information Techology</div>
+                <div class="teammember-dialog-name">Chia-Han Kuo</div>
+                <div class="teammember-dialog-detail">
+                  Chia-Han recently graduated from the Department of Electrical Engineering at National Taiwan University. He participated in PAMUN 2013 as the Deputy Under Secretary General of Information Technology and is glad to be part of this team again. He has a passion for programming and is responsible for designing PAMUN 2014’s official mobile application. If you have any suggestion for these applications, he will be more than glad to have a conversation with you.
+                </div>
+              </div>
+            </div>
+            <div class="teammember dialog-activator">
+              <img class="teammember-img" lsrc="icons/about/team/lincoln.jpg"/>
+              <div class="teammember-title">Under Secretary General of Information Techology</div>
+              <div class="teammember-name"> - Lincoln Wang</div>
+              <div class="dialog-content">
+                <img class="teammember-dialog-img" lsrc="icons/about/team/lincoln.jpg"/>
+                <div class="teammember-dialog-title">Under Secretary General of Information Techology</div>
+                <div class="teammember-dialog-name">Lincoln Wang</div>
+                <div class="teammember-dialog-detail">
+                  Lincoln is a 4th year majoring in Electrical Engineering at National Taiwan University. He has been both a delegate and an assistant chair at PAMUN 2011 and 2012 respectively. Additionally, he has participated in WorldMUN 2012 in Vancouver, Taipei MUN 2012, and served as an assistant chair at HSMUN 2012 and a chair at HSMUN 2013. He also played a role establishing of Taiwan’s first undergraduate Consulting Club and spearheaded the Community Consulting Program, which serves clients in the health care services, e-commerce companies and recreational leisure companies. This year, he is excited to expand his experience into web design as designer for the official PAMUN 2014 website. He looks forward to meeting everyone participating this year and plans on making PAMUN 2014 an experience of a lifetime.
+                </div>
+              </div>
+            </div>
+            <div class="teammember dialog-activator">
+              <img class="teammember-img" lsrc="icons/about/team/jake.jpg"/>
+              <div class="teammember-title">Under Secretary General of Logistics</div>
+              <div class="teammember-name"> - Jake Chang</div>
+              <div class="dialog-content">
+                <img class="teammember-dialog-img" lsrc="icons/about/team/jake.jpg"/>
+                <div class="teammember-dialog-title">Under Secretary General of Logistics</div>
+                <div class="teammember-dialog-name">Jake Chang</div>
+                <div class="teammember-dialog-detail">
+                  Jake is currently a 3rd year majoring in Economics at NTU. Throughout his first two years of college, he has accrued a multitude of logistic experience. This includes co-coordinating the annual weekly events held by the Department of Political Sciences as well as organizing the 1rst year orientation camping trip for the Department of Economics. Additionally, he was work experience as a waiter at T.G.I Fridays and as an insurance saleperson at Nan Shan Life. He is excited to be working with the PAMUN team as the USG of Logistics and hopes that as many people as possible can attend the unforgettable experience that will be PAMUN 2014.
+                </div>
+              </div>
+            </div>
+            <div class="teammember dialog-activator">
+              <img class="teammember-img" lsrc="icons/about/team/vivian.jpg"/>
+              <div class="teammember-title">Under Secretary General of Logistics</div>
+              <div class="teammember-name"> - Vivian Huang</div>
+              <div class="dialog-content">
+                <img class="teammember-dialog-img" lsrc="icons/about/team/vivian.jpg"/>
+                <div class="teammember-dialog-title">Under Secretary General of Logistics</div>
+                <div class="teammember-dialog-name">Vivian Huang</div>
+                <div class="teammember-dialog-detail">
+                  Vivian is a 4th year majoring in Economics at National Taiwan University. She discovered MUN last year when she attended PAMUN 2013 out of curiosity. This year, she decided she wanted to be a part of team making PAMUN 2014 possible. Since she started college, she has accrued a multitude of public relations and event planning experiences such as in the Pop Dance Club and in planning the NTU Annual ArtFest. As one of PAMUN’s Under Secretary Generals of Logistics, she will be combining her expertise and passion for event planning with her interest for MUN. She and the rest of the PAMUN team are committed to making PAMUN 2014 be as inspiring and unforgettable an experience as it was for her last year.
+                </div>
+              </div>
+            </div>
+            <div class="teammember dialog-activator">
+              <img class="teammember-img" lsrc="icons/about/team/eva.jpg"/>
+              <div class="teammember-title">Under Secretary General of Marketing</div>
+              <div class="teammember-name"> - Eva Huang</div>
+              <div class="dialog-content">
+                <img class="teammember-dialog-img" lsrc="icons/about/team/eva.jpg"/>
+                <div class="teammember-dialog-title">Under Secretary General of Marketing</div>
+                <div class="teammember-dialog-name">Eva Huang</div>
+                <div class="teammember-dialog-detail">
+                  Eva is a 4th year in the Department of International Business. Having been actively engaged in MUN activities since 1rst year, she has participated in numerous MUN conferences abroad and at home. This includes being a delegate for National MUN 2012 in New York City and World MUN 2013 in Melbourne as well as assistant chair for PAMUN 2012. Eva is now excited to be part of the PAMUN 2014 marketing team and will ensure that this year’s marketing campaign will introduce PAMUN to even more people, enabling as many as possible to participate and enjoy the awesome experience that will be PAMUN 2014.
+                </div>
+              </div>
+            </div>
+            <div class="teammember dialog-activator">
+              <img class="teammember-img" lsrc="icons/about/team/rona.jpg"/>
+              <div class="teammember-title">Under Secretary General of Marketing</div>
+              <div class="teammember-name"> - Rona Chen</div>
+              <div class="dialog-content">
+                <img class="teammember-dialog-img" lsrc="icons/about/team/rona.jpg"/>
+                <div class="teammember-dialog-title">Under Secretary General of Marketing</div>
+                <div class="teammember-dialog-name">Rona Chen</div>
+                <div class="teammember-dialog-detail">
+                  Rona is a 3rd year majoring in International Business and study Art & Design Program at National Taiwan University. Her extensive marketing experience includes serving as Director of Marketing for the International Students Information Service club in 2013, and she also interned at a marketing and projects program, where she was responsible for planning and developing marketing strategies. She is glad to be part of the Marketing team responsible for promoting PAMUN 2014 and letting everyone know how great PAMUN really is.
+                </div>
+              </div>
+            </div>
+            <div class="teammember dialog-activator">
+              <img class="teammember-img" lsrc="icons/about/team/brandon.jpg"/>
+              <div class="teammember-title">Under Secretary General of Public Relations</div>
+              <div class="teammember-name"> - Brandon Lin</div>
+              <div class="dialog-content">
+                <img class="teammember-dialog-img" lsrc="icons/about/team/brandon.jpg"/>
+                <div class="teammember-dialog-title">Under Secretary General of Public Relations</div>
+                <div class="teammember-dialog-name">Brandon Lin</div>
+                <div class="teammember-dialog-detail">
+                  Brandon is a 4th year majoring in Management Information System at Soochow University. In high school, he participated in the Entrepreneurial and Leadership community in Singapore as well as in Taipei. His first MUN experience was at PAMUN 2012. Since then, he has expanded his experience to include serving in NTUMUN Public Relations as well as head delegate for the NTUMUN delegation to WMUN 2013. Since 2012, he has improved his leadership skills while managing his startup company between US and Taiwan as well as cooperating with co-workers of Envisioning Tech of Future Organization from all over the world. This year he's honored to be working with such a dedicated staff and cannot wait to bringing PAMUN 2014 to you!
+                </div>
+              </div>
+            </div>
+            <div class="teammember dialog-activator">
+              <img class="teammember-img" lsrc="icons/about/team/will.jpg"/>
+              <div class="teammember-title">Under Secretary General of Public Relations</div>
+              <div class="teammember-name"> - Will Tseng</div>
+              <div class="dialog-content">
+                <img class="teammember-dialog-img" lsrc="icons/about/team/will.jpg"/>
+                <div class="teammember-dialog-title">Under Secretary General of Public Relations</div>
+                <div class="teammember-dialog-name">Will Tseng</div>
+                <div class="teammember-dialog-detail">
+                  Will is a 2rd year majoring in English Language and Literature at Soochow University. His attended his first college MUN conference, PAMUN 2013, his 1st year. One semester later, he proudly represented Soochow as part of its delegation to NMUN 2014. After both of these unforgettable and enriching experiences, he realized he wanted to be an integral part of the next PAMUN, and he is now honored to serve as Deputy Under Secretary General of Public Relations with the rest of the PAMUN 2014 team. With his ability to fully utilize and integrating any resources at his disposal, he is eager to make this years PAMUN even more enjoyable than the last.
+                </div>
+              </div>
+            </div>
+            <div class="teammember dialog-activator">
+              <img class="teammember-img" lsrc="icons/about/team/violet.jpg"/>
+              <div class="teammember-title">Under Secretary General of Social Events</div>
+              <div class="teammember-name"> - Violet Lee</div>
+              <div class="dialog-content">
+                <img class="teammember-dialog-img" lsrc="icons/about/team/violet.jpg"/>
+                <div class="teammember-dialog-title">Under Secretary General of Social Events</div>
+                <div class="teammember-dialog-name">Violet Lee</div>
+                <div class="teammember-dialog-detail">
+                  Violet is a 3rd year majoring in Business Administration in National Taiwan University. She started participating in MUN in high school and since then has attended various conferences. Each of them has been a unique, rewarding, and impactful experience for her. She is currently a member of the NTUMUN 15th executive board. Last year, she was part of the staff for the Department of Social Events. This year, she is excited to be working as one of the department’s Under Secretary Generals and is fully committed to hosting a series of unforgettable social events for everyone at PAMUN 2014.
+                </div>
+              </div>
+            </div>
+            <div class="teammember dialog-activator">
+              <img class="teammember-img" lsrc="icons/about/team/wendy.jpg"/>
+              <div class="teammember-title">Under Secretary General of Social Events</div>
+              <div class="teammember-name"> - Wendy Chen</div>
+              <div class="dialog-content">
+                <img class="teammember-dialog-img" lsrc="icons/about/team/wendy.jpg"/>
+                <div class="teammember-dialog-title">Under Secretary General of Social Events</div>
+                <div class="teammember-dialog-name">Wendy Chen</div>
+                <div class="teammember-dialog-detail">
+                  Wendy is a 3rd year majoring in Applied Foreign Languages in Shih Chien University. She began participating in MUN early on in high school and was also leader of her high school’s MUN society. After entering college, she eagerly continued to attend MUN conferences as a delegate and attended PAMUN 2012 her 1rst year. Since then, she has expanded into conference hosting, and was staff for HSMUN 2013, Secretary General of SHSMUN 2013, as well as staff for PAMUN 2013’s Department of Social Events. This year, she is excited to be one of the department’s USGs and plans on working with the rest of the team to expand on last years events to bring all delegates an unforgettable foray into Taiwanese and Chinese culture.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
