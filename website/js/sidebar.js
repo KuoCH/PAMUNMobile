@@ -2,7 +2,7 @@
 Pan Asia MUN Mobile Web APPS
 
 
-<copyright file="AuthenticationType.cs" company="Pan Asia MUN">
+<copyright file="sidebar.js" company="Pan Asia MUN">
 Copyright (c) 2014 All Right Reserved, http://panasiamun.com//
 
 THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY 

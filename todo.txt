@@ -1,7 +1,7 @@
 Meet the team:
   Dialog
-Rule of Procedure:
-  add pdf file links
+transportation:
+  mrt
 Background Guides:
   content??
 Country Assignment:
@@ -9,6 +9,6 @@ Country Assignment:
 Position Paper:
   ??
 Conference Tip:
-  ??
+  (delete)
 Video:
   rotate orientation when video is playing
