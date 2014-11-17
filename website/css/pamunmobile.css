@@ -324,6 +324,11 @@ h4 {
 }
 
 /*  ===  page-rules-of-procedure  ===  */
+#mrt-img {
+  width: 100%;
+}
+
+/*  ===  page-rules-of-procedure  ===  */
 .rules-of-procedure-item {
   width: 100%;
   display: inline-block;

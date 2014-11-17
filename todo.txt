@@ -1,4 +1,8 @@
 transportation:
+  opening/closing place
+  committee place
+  opening -> committee place
+  se*4
   mrt
 Country Assignment:
   add into page
