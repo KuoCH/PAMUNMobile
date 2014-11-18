@@ -45,6 +45,17 @@ $(function () {
       }
     }
   });
+
+  $('.country-assignment-committee').on('tap', function(e) {
+    jThis = $(this);
+    if (jThis.hasClass('active')) {
+      jThis.removeClass('active');
+    } else {
+      jThis.addClass('active');
+    }
+    e.preventDefault();
+    return false;
+  });
   
 /*
   */

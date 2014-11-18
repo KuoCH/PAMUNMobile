@@ -342,6 +342,73 @@ h4 {
   width: 100%;
 }
 
+/*  ===  page-country-assignments  ===  */
+.country-assignment-committee {
+  margin: 10vw 5vw;
+  font-family: segoeui;
+  font-size: 7vw;
+  vertical-align: middle;
+}
+
+.country-assignment-arrow {
+  margin-top: 1vw;
+  margin-right: 3vw;
+  display: inline-block;
+  width: 6vw;
+  height: 6vw;
+  background-image: url(../icons/arrowright_blue.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.country-assignment-committee.active .country-assignment-arrow {
+  background-image: url(../icons/arrowdown_blue.png);
+}
+
+.country-assignment-item {
+  display: none;
+  width: 90vw;
+  border-collapse: collapse;
+  border: 2px solid #000;
+}
+
+.country-assignment-committee.active .country-assignment-item {
+  display: table;
+}
+
+.country-assignment-delegate {
+  display: table-row;
+  border: 1px solid #888;
+  font-family: segoeui;
+  font-size: 5vw;
+  height: 15vw;
+  vertical-align: middle;
+}
+
+.country-assignment-country {
+  padding-left: 2vw;
+  padding-right: 2vw;
+  width: 62%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.country-assignment-register-number {
+  width: 11%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.country-assignment-name {
+  width: 28%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+
 /*  ===  page-mail-us  ===  */
 #page-mail-us .content {
   padding: 8.333333vw 8.055556vw;

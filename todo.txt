@@ -4,8 +4,6 @@ transportation:
   opening -> committee place
   se*4
   mrt
-Country Assignment:
-  add into page
 Background Guides:
   content*3
 Position Paper:
