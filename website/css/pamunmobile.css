@@ -79,8 +79,8 @@ h4 {
 }
 
 .zoom-in-img {
-  width: 80vw;
-  margin: 10vw;
+  width: 90vw;
+  margin: 5vw;
 }
 
 .zoom-in-img.active {
@@ -285,13 +285,19 @@ h4 {
 
 /*  ===  page-schedule  ===  */
 #page-schedule .schedule-date {
-  padding: 12vw 5vw 4vw;
+  padding: 12vw 5vw 0.5vw;
   font-family: futura_bold;
-  font-size: 5.555556vw;
+  font-size: 7vw;
   color: #4371A1;
 }
 
-#page-schedule .schedule-day {
+#page-schedule .schedule-location{
+  padding: 1vw 8vw 0vw;
+  font-family: segoeui;
+  font-size: 6vw;
+}
+
+#page-schedule .schedule-block {
   padding: 0vw 8vw;
   display: table;
 }
@@ -299,7 +305,7 @@ h4 {
 #page-schedule .schedule-session {
   display: table-row;
   font-family: segoeui;
-  font-size: 5.833333vw;
+  font-size: 6vw;
   color: #000;
 }
 
@@ -329,6 +335,50 @@ h4 {
 
 .social-event-title {
   font-weight: bold;
+}
+
+/*  ===  page-transportation  ===  */
+.location-item {
+  margin: 15vw 0vw;
+  width: 100vw;
+  font-family: futura_bold;
+}
+
+.location-name {
+  margin: 0vw 5vw;
+  width: 90vw;
+  font-family: futura_bold;
+  font-size: 7vw;
+  color: #4371A1;
+}
+
+.location-usage {
+  margin: 0vw 5vw;
+  width: 90vw;
+  font-size: 6vw;
+  color: #555;
+}
+
+.location-address {
+  margin: 0vw 5vw;
+  width: 90vw;
+  font-size: 6vw;
+  color: #888;
+}
+
+.location-how-to {
+  margin: 0vw 5vw;
+  width: 90vw;
+  font-family: segoeui;
+  font-size: 5vw;
+}
+
+.location-show-map {
+  margin: 0vw 5vw;
+  width: 90vw;
+  font-family: segoeui;
+  font-size: 6vw;
+  color:#3071a9;
 }
 
 /*  ===  page-rules-of-procedure  ===  */

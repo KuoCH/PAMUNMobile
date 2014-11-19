@@ -10,3 +10,5 @@ Position Paper:
   at the end of November
 Video:
   rotate orientation when video is playing
+Homepage:
+  deadline of PP @ 11/25
