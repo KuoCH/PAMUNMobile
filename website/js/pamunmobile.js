@@ -57,6 +57,17 @@ $(function () {
     return false;
   });
   
+  $('.zoom-in-img').on('tap', function(e) {
+    jThis = $(this);
+    if (jThis.hasClass('active')) {
+      jThis.removeClass('active');
+    } else {
+      jThis.addClass('active');
+    }
+    e.preventDefault();
+    return false;
+  });
+  
 /*
   */
 });

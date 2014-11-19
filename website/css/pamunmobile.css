@@ -78,6 +78,14 @@ h4 {
   letter-spacing: 0.027778vw;
 }
 
+.zoom-in-img {
+  width: 80vw;
+  margin: 10vw;
+}
+
+.zoom-in-img.active {
+  width: 200vw;
+}
 
 /*  ===  page-home  ===  */
 #countdown-frame {
@@ -324,11 +332,6 @@ h4 {
 }
 
 /*  ===  page-rules-of-procedure  ===  */
-#mrt-img {
-  width: 100%;
-}
-
-/*  ===  page-rules-of-procedure  ===  */
 .rules-of-procedure-item {
   width: 100%;
   display: inline-block;
@@ -540,6 +543,5 @@ h4 {
 }
 
 .poster-img {
-  width: 80vw;
   margin: 10vw;
 }
