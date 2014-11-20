@@ -1,14 +1,8 @@
 transportation:
-  opening/closing place
-  committee place
   opening -> committee place
-  se*4
-  mrt
 Background Guides:
   content*3
 Position Paper:
   at the end of November
 Video:
   rotate orientation when video is playing
-Homepage:
-  deadline of PP @ 11/25
