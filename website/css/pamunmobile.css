@@ -571,8 +571,9 @@ h4 {
   position: relative;
   margin-bottom: 5.555556vw;
   width: 100%;
-  background-image: url(../icons/media/loading.jpg);
+  background-image: url(../icons/loading.jpg);
   background-size: contain;
+  background-repeat: no-repeat;
   padding-left: 0px;
   padding-right: 0px;
 }
