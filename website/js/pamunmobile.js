@@ -68,6 +68,23 @@ $(function () {
     return false;
   });
   
+  var hashObj = {};
+  if (hashtag = document.location.hash.substr(1)) {
+    hashArray = hashtag.split('&');
+    for(var i in hashArray) {
+      pair=hashArray[i].split('=');
+      hashObj[pair[0]] = pair[1];
+    }
+    if ( hashObj.func === 'show-class' ){
+      setTimeout( function() {
+        $('html, body').animate({
+          scrollTop: $('.'+hashObj.classname)[hashObj.index].offsetTop
+        }, 'slow');
+      }, 300);
+    }
+  }
+
 /*
   */
 });
+

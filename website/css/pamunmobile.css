@@ -337,15 +337,19 @@ h4 {
   font-weight: bold;
 }
 
+.social-event-location {
+  color: #3071a9;
+}
+
 /*  ===  page-transportation  ===  */
 .location-item {
-  margin: 15vw 0vw;
+  padding: 15vw 0vw;
   width: 100vw;
   font-family: futura_bold;
 }
 
 .location-name {
-  margin: 0vw 5vw;
+  padding: 0vw 5vw;
   width: 90vw;
   font-family: futura_bold;
   font-size: 7vw;
@@ -353,28 +357,28 @@ h4 {
 }
 
 .location-usage {
-  margin: 0vw 5vw;
+  padding: 0vw 5vw;
   width: 90vw;
   font-size: 6vw;
   color: #555;
 }
 
 .location-address {
-  margin: 0vw 5vw;
+  padding: 0vw 5vw;
   width: 90vw;
   font-size: 6vw;
   color: #888;
 }
 
 .location-how-to {
-  margin: 0vw 5vw;
+  padding: 0vw 5vw;
   width: 90vw;
   font-family: segoeui;
   font-size: 5vw;
 }
 
 .location-show-map {
-  margin: 0vw 5vw;
+  padding: 0vw 5vw;
   width: 90vw;
   font-family: segoeui;
   font-size: 6vw;
