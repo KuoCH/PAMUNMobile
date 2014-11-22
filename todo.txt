@@ -1,8 +1,6 @@
-transportation:
-  opening -> committee place
+Country Assignment:
+  Update ARF SCO
 Background Guides:
   content*3
 Position Paper:
   at the end of November
-Video:
-  rotate orientation when video is playing

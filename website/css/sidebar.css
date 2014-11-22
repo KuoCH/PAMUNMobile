@@ -261,10 +261,9 @@ PARTICULAR PURPOSE.
 
 .sb-sidebar .group-item {
   background: #F4F4F4;
-  height: 0;
+  height: 9.166667vw;
   width: 83.333333vw;
   position: relative;
-  transition: all 0.2s ease 0s;
   display: none;
 }
 
@@ -273,8 +272,6 @@ PARTICULAR PURPOSE.
 }
 
 .sb-sidebar .group-active .group-item {
-  height: 9.166667vw;
-  transition: all 0.2s ease 0s;
   display: block;
 }
 

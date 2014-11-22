@@ -70,6 +70,12 @@ h4 {
   src: url(../fonts/segoeuiz.ttf);
 }
 
+@font-face
+{
+  font-family: century_gothic;
+  src: url(../fonts/century_gothic.ttf);
+}
+
 .page .content.pure-article {
   padding: 16.666667vw 8vw 11.111111vw;
   /*text-align: justify;*/
@@ -117,6 +123,60 @@ h4 {
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 10;
+}
+
+#countdown-frame.count-hour {
+  margin: 0vw;
+  width: 100vw;
+  height: 40vw;
+  text-align: center;
+  /*
+  position: relative;
+  margin-top: 6.66667vw;
+  margin-left: 15.27778vw;
+  height: 66.66667vw;
+  vertical-align: middle;
+ /* border: 3px ridge #4575AA */
+}
+
+#countdown-time-text {
+  width: 100vw;
+  height: 20vw;
+  font-family: futura_oblique;
+  font-size: 12vw;
+  color: #4575AA;
+  vertical-align: middle;
+}
+
+#countdown-time-number {
+  -moz-border-radius: 4vw;
+  -webkit-border-radius: 4vw;
+  -khtml-border-radius: 4vw;
+  padding: 1.9vw 0;
+  margin: 0 1vw;
+  display: inline-block;
+  width: 12vw;
+  height: 20vw;
+  text-align: center;
+  font-size: 12vw;
+  z-index: 11;
+  font-family: century_gothic;
+  color: #fff;
+  background: #4575AA;
+  vertical-align: middle;
+}
+
+#countdown-colon {
+  margin: 0;
+  display: inline-block;
+  width: 3vw;
+  height: 20vw;
+  text-align: center;
+  font-size: 12vw;
+  z-index: 11;
+  color: #4575AA;
+  font-family: futura_oblique;
+  line-height: 100%;
 }
 
 #important-dates-frame {
