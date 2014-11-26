@@ -539,6 +539,23 @@ h4 {
   text-align: center;
 }
 
+/*  ===  page-position-papers  ===  */
+#page-position-papers .content {
+  padding: 12vw 6vw 10vw;
+  font-family: segoeui;
+  font-size: 5.5vw;
+  letter-spacing: 0.027778vw;
+}
+
+#position-paper-guideline-head {
+  font-size: 7vw;
+  padding-bottom: 2vw;
+  text-align: center;
+}
+
+#position-paper-guideline-article {
+  padding-left: 3vw;
+}
 
 /*  ===  page-mail-us  ===  */
 #page-mail-us .content {
