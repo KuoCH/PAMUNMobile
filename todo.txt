@@ -1,6 +1,9 @@
+Position Paper:
+  Guide
+Sponsor:
+  Add new sponsors
 Country Assignment:
   Update ARF SCO
 Background Guides:
   content*3
-Position Paper:
-  at the end of November
+
