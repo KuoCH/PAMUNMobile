@@ -104,6 +104,10 @@ h4 {
  /* border: 3px ridge #4575AA */
 }
 
+#countdown-frame.countdown-end {
+  display:none;
+}
+
 #countdown-day-number {
   position: absolute;
   top: 20vw;
@@ -180,7 +184,7 @@ h4 {
 }
 
 #important-dates-frame {
-  margin-top: 3.33333vw;
+  margin-top: 10vw;
   margin-left: 18.61111vw;
   font-family: futura_oblique;
 }

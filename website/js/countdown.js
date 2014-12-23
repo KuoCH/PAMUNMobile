@@ -33,6 +33,7 @@ $(function () {
     countdownBySeconds();
     return;
   }
+  $('#countdown-frame').addClass("countdown-end");
 
 });
 
